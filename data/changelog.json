@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-10-13",
+    "title": "First full update (browser-free run)",
+    "items": [
+      "Re-crawled all sites with the bot user agent; added The Home Depot, Booking.com and Chipotle (21 platforms).",
+      "Email, SMS, live chat and online booking re-scored from official help pages; each claim now links its source.",
+      "Developer API / MCP / agent-payment evidence re-checked; Etsy and Instacart structured-path scores up slightly for official MCP support.",
+      "Best Buy: home page and robots.txt timed out this run (bot access 15 -> 8, total 61 -> 50) pending retest.",
+      "Allbirds 78 -> 86, OpenTable 58 -> 66, Great Clips and Aspen Dental 43 -> 51: confirmed email/text/chat channels.",
+      "Airbnb 41 -> 37 and eBay 49 -> 46: no customer email channel found.",
+      "United still times out; Hyatt (403) and Resy (HTML shell) still have no valid robots.txt.",
+      "Browser checkout tests not yet run. All scores remain preliminary."
+    ]
+  },
+  {
+    "date": "2026-10-13",
     "title": "Initial preliminary release",
     "items": [
       "Scored 18 platforms against the 100-point rubric.",

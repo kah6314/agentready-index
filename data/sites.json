@@ -10,15 +10,15 @@
       "bot_access": 2,
       "agent_checkout": 6,
       "structured_paths": 8,
-      "email": 5,
+      "email": 6,
       "sms": 4,
-      "live_chat": 10,
+      "live_chat": 9,
       "book_online": 10
     },
     "total": 45,
     "evidence": [
       {
-        "label": "Crawl 2026-10-13: home HTTP 202 (0 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 4, AI-agent mentions 0",
+        "label": "Crawl 2026-10-13 (update run): home HTTP 200 (2167 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 3",
         "url": "data/evidence.csv"
       },
       {
@@ -32,9 +32,21 @@
       {
         "label": "Selling Partner API docs",
         "url": "https://developer-docs.amazon.com/sp-api/"
+      },
+      {
+        "label": "email: partial - Amazon help says support via phone, chat, email and self-service; no direct address, in-account contact flow",
+        "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GSD587LKW72HKU2V"
+      },
+      {
+        "label": "book online: yes - Full online ordering",
+        "url": "https://www.amazon.com"
+      },
+      {
+        "label": "agent payments: partial - Own agents (Buy for Me, Alexa for Shopping); no support found for third-party agent protocols such as ACP/UCP",
+        "url": "https://www.aboutamazon.com/news/retail/alexa-for-shopping-ai-assistant"
       }
     ],
-    "notes": "Bot UA gets HTTP 202 with an empty body (bot challenge). robots.txt has full Disallow for GPTBot and ClaudeBot (4 groups matched). No third-party agent checkout path we are confident of."
+    "notes": "Bot UA gets HTTP 202 with an empty body (bot challenge). robots.txt has full Disallow for GPTBot and ClaudeBot (4 groups matched). No third-party agent checkout path we are confident of. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run."
   },
   {
     "id": "walmart",
@@ -55,7 +67,7 @@
     "total": 73,
     "evidence": [
       {
-        "label": "Crawl 2026-10-13: home HTTP 200 (374587 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 2",
+        "label": "Crawl 2026-10-13 (update run): home HTTP 200 (374779 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -69,9 +81,25 @@
       {
         "label": "Walmart developer portal",
         "url": "https://developer.walmart.com/"
+      },
+      {
+        "label": "sms: partial - Customer Care messaging program with HELP/STOP short codes; mostly alerts, not full text support",
+        "url": "https://www.walmart.com/help/article/mobile-alerts-terms-of-use/499122d9bba94d08b50e8facf42fcc82"
+      },
+      {
+        "label": "live chat: yes - Help Center online chat and automated assistant; chat with shopper on delivery orders",
+        "url": "https://corporate.walmart.com/about/contact"
+      },
+      {
+        "label": "book online: yes - Full online ordering, pickup and delivery",
+        "url": "https://www.walmart.com"
+      },
+      {
+        "label": "agent payments: yes - Gemini shopping via UCP (Jan 2026); ChatGPT app with account linking after Instant Checkout was scaled back; Sparky assistant",
+        "url": "https://corporate.walmart.com/news/2026/01/11/walmart-and-google-turn-ai-discovery-into-effortless-shopping-experiences"
       }
     ],
-    "notes": "Home page and robots.txt reachable; no AI crawler full blocks. Public ChatGPT checkout partnership credited conservatively; channel scores are estimates from public help pages."
+    "notes": "Home page and robots.txt reachable; no AI crawler full blocks. Public ChatGPT checkout partnership credited conservatively; channel scores are estimates from public help pages. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run."
   },
   {
     "id": "target",
@@ -92,7 +120,7 @@
     "total": 66,
     "evidence": [
       {
-        "label": "Crawl 2026-10-13: home HTTP 200 (416037 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 3",
+        "label": "Crawl 2026-10-13 (update run): home HTTP 200 (409745 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -102,9 +130,29 @@
       {
         "label": "Live robots.txt",
         "url": "https://www.target.com/robots.txt"
+      },
+      {
+        "label": "email: partial - Web contact form flow at contactus.target.com; no public email address",
+        "url": "https://contactus.target.com/ContactUs/PreChatOrderExperience"
+      },
+      {
+        "label": "live chat: yes - Target Chat on Target.com and app; availability varies",
+        "url": "https://help.target.com/help/TargetGuestHelpArticleDetail?articleId=ka95d000000ws8UAAQ&articleTitle=How+do+I+use+Target+Chat%3F"
+      },
+      {
+        "label": "book online: yes - Full online ordering, Drive Up, pickup",
+        "url": "https://www.target.com"
+      },
+      {
+        "label": "api: no - No public developer API found (partner-only)",
+        "url": "https://corporate.target.com"
+      },
+      {
+        "label": "agent payments: yes - Checkout in Gemini/AI Mode via UCP, Copilot Checkout, Target app in ChatGPT",
+        "url": "https://corporate.target.com/press/fact-sheet/2026/01/google-gemini-2026"
       }
     ],
-    "notes": "Home page and robots.txt reachable; no AI crawler blocks. Agent checkout score reflects a ChatGPT app presence only; no public developer API."
+    "notes": "Home page and robots.txt reachable; no AI crawler blocks. Agent checkout score reflects a ChatGPT app presence only; no public developer API. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run."
   },
   {
     "id": "bestbuy",
@@ -114,22 +162,22 @@
     "date": "2026-10-13",
     "status": "preliminary",
     "subscores": {
-      "bot_access": 15,
+      "bot_access": 8,
       "agent_checkout": 4,
       "structured_paths": 11,
-      "email": 6,
+      "email": 2,
       "sms": 6,
       "live_chat": 9,
       "book_online": 10
     },
-    "total": 61,
+    "total": 50,
     "evidence": [
       {
-        "label": "Crawl 2026-10-13: home HTTP 200 (537001 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 3",
+        "label": "Crawl 2026-10-13 (update run): home HTTP 000 (0 bytes), robots HTTP 000 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
-        "label": "robots.txt (saved copy)",
+        "label": "robots.txt (saved copy, earlier crawl today)",
         "url": "data/raw/robots_bestbuy.txt"
       },
       {
@@ -139,9 +187,17 @@
       {
         "label": "Best Buy Products API",
         "url": "https://developer.bestbuy.com/"
+      },
+      {
+        "label": "email: no - Contact page lists chat and phone; no support email published",
+        "url": "https://www.bestbuy.com/contact-us"
+      },
+      {
+        "label": "book online: yes - Online ordering and Geek Squad appointment booking",
+        "url": "https://www.bestbuy.com"
       }
     ],
-    "notes": "Home reachable. robots.txt names AI agents (GPTBot, ClaudeBot, ChatGPT-User, etc.) but only allows /site/ and /discover-learn/ and blocks cart, fulfillment, pricing, so access is partial."
+    "notes": "Home reachable. robots.txt names AI agents (GPTBot, ClaudeBot, ChatGPT-User, etc.) but only allows /site/ and /discover-learn/ and blocks cart, fulfillment, pricing, so access is partial. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Home and robots.txt timed out from two networks in this run (earlier crawl today reached them); bot access lowered pending retest."
   },
   {
     "id": "etsy",
@@ -153,16 +209,16 @@
     "subscores": {
       "bot_access": 6,
       "agent_checkout": 13,
-      "structured_paths": 11,
-      "email": 8,
+      "structured_paths": 13,
+      "email": 6,
       "sms": 2,
-      "live_chat": 5,
+      "live_chat": 6,
       "book_online": 10
     },
-    "total": 55,
+    "total": 56,
     "evidence": [
       {
-        "label": "Crawl 2026-10-13: home HTTP 403 (776 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 1",
+        "label": "Crawl 2026-10-13 (update run): home HTTP 403 (776 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -176,9 +232,29 @@
       {
         "label": "Etsy Open API v3",
         "url": "https://developers.etsy.com/"
+      },
+      {
+        "label": "email: partial - Contact Etsy Support web form; no public support email",
+        "url": "https://help.etsy.com/hc/en-us/articles/115013375488-How-to-Contact-Etsy-Support"
+      },
+      {
+        "label": "book online: yes - Full online ordering",
+        "url": "https://www.etsy.com"
+      },
+      {
+        "label": "api: yes - Etsy Open API v3; seller/personal/commercial app tiers",
+        "url": "https://developers.etsy.com/documentation/"
+      },
+      {
+        "label": "mcp: yes - Official Dev MCP server (API spec knowledge for developers, not live shop actions)",
+        "url": "https://developers.etsy.com/documentation/mcp_server/devmcpserver/"
+      },
+      {
+        "label": "agent payments: yes - Instant Checkout in ChatGPT (ACP, first partner Sept 2025), Gemini/AI Mode via UCP, Copilot; OpenAI scaled back Instant Checkout Mar 2026",
+        "url": "https://help.etsy.com/hc/en-us/articles/34208252828695-Purchasing-Etsy-Items-Through-ChatGPT"
       }
     ],
-    "notes": "Bot UA received HTTP 403 on the home page (776 bytes); robots.txt restricts some crawler paths. Agent checkout credit is for the announced ChatGPT partnership (conservative)."
+    "notes": "Bot UA received HTTP 403 on the home page (776 bytes); robots.txt restricts some crawler paths. Agent checkout credit is for the announced ChatGPT partnership (conservative). Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run."
   },
   {
     "id": "ebay",
@@ -191,15 +267,15 @@
       "bot_access": 3,
       "agent_checkout": 5,
       "structured_paths": 14,
-      "email": 6,
+      "email": 2,
       "sms": 3,
-      "live_chat": 8,
+      "live_chat": 9,
       "book_online": 10
     },
-    "total": 49,
+    "total": 46,
     "evidence": [
       {
-        "label": "Crawl 2026-10-13: home HTTP 403 (1832 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 1, AI-agent mentions 0",
+        "label": "Crawl 2026-10-13 (update run): home HTTP 403 (1832 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 2",
         "url": "data/evidence.csv"
       },
       {
@@ -213,9 +289,25 @@
       {
         "label": "eBay developer program",
         "url": "https://developer.ebay.com/"
+      },
+      {
+        "label": "email: no - No general support email; Help & Contact chat/callback (email only in some cases)",
+        "url": "https://pages.ebay.com/ca/help/account/contact-customer-support.html"
+      },
+      {
+        "label": "book online: yes - Full online buying",
+        "url": "https://www.ebay.com"
+      },
+      {
+        "label": "api: yes - developer.ebay.com public APIs (Browse, Sell etc.) with developer account; portal page blocked, confirmed via search",
+        "url": "https://developer.ebay.com/develop/api/sell/notification_events"
+      },
+      {
+        "label": "mcp: no - Only unofficial third-party MCP servers found",
+        "url": "https://developer.ebay.com"
       }
     ],
-    "notes": "Bot UA received HTTP 403. robots.txt disallows GPTBot, ClaudeBot, anthropic-ai and others, with some exceptions to the disallow. Strong public APIs (Browse, Buy) lift the structured score."
+    "notes": "Bot UA received HTTP 403. robots.txt disallows GPTBot, ClaudeBot, anthropic-ai and others, with some exceptions to the disallow. Strong public APIs (Browse, Buy) lift the structured score. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run."
   },
   {
     "id": "allbirds",
@@ -228,15 +320,15 @@
       "bot_access": 19,
       "agent_checkout": 15,
       "structured_paths": 15,
-      "email": 8,
-      "sms": 4,
-      "live_chat": 7,
+      "email": 9,
+      "sms": 9,
+      "live_chat": 9,
       "book_online": 10
     },
-    "total": 78,
+    "total": 86,
     "evidence": [
       {
-        "label": "Crawl 2026-10-13: home HTTP 200 (714443 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 1",
+        "label": "Crawl 2026-10-13 (update run): home HTTP 200 (714452 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -254,9 +346,13 @@
       {
         "label": "Shopify UCP agentic checkout",
         "url": "https://shopify.dev/docs/apps/build/storefront-mcp"
+      },
+      {
+        "label": "email: yes - help@allbirds.com listed for orders, returns, account",
+        "url": "https://www.allbirds.com/pages/contact-us"
       }
     ],
-    "notes": "Shopify storefront: home and robots reachable; robots.txt restricts some crawler paths. Shopify merchants get Shopify UCP agentic checkout by platform default (https://shopify.dev/docs/apps/build/storefront-mcp); score assumes the platform defaults are enabled."
+    "notes": "Shopify storefront: home and robots reachable; robots.txt restricts some crawler paths. Shopify merchants get Shopify UCP agentic checkout by platform default (https://shopify.dev/docs/apps/build/storefront-mcp); score assumes the platform defaults are enabled. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run."
   },
   {
     "id": "southwest",
@@ -269,15 +365,15 @@
       "bot_access": 10,
       "agent_checkout": 3,
       "structured_paths": 3,
-      "email": 5,
-      "sms": 7,
-      "live_chat": 8,
+      "email": 9,
+      "sms": 6,
+      "live_chat": 9,
       "book_online": 10
     },
-    "total": 46,
+    "total": 50,
     "evidence": [
       {
-        "label": "Crawl 2026-10-13: home HTTP 200 (7550 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 0",
+        "label": "Crawl 2026-10-13 (update run): home HTTP 200 (7550 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -287,9 +383,25 @@
       {
         "label": "Live robots.txt",
         "url": "https://www.southwest.com/robots.txt"
+      },
+      {
+        "label": "email: yes - Contact Us page offers complaint/compliment web forms and email",
+        "url": "https://support.southwest.com/helpcenter/contact-us"
+      },
+      {
+        "label": "sms: partial - Text HELP to program short codes (e.g. 70139); no two-way support-by-text confirmed",
+        "url": "https://www.southwest.com/about-southwest/terms-and-conditions/text-message-terms/"
+      },
+      {
+        "label": "book online: yes - Booking on southwest.com and app",
+        "url": "https://www.southwest.com"
+      },
+      {
+        "label": "agent payments: partial - Oct 2026 ChatGPT plugin for flight discovery/shopping (with OpenAI/AWS); in-chat payment not stated, booking completes on southwest.com",
+        "url": "https://press.aboutamazon.com/aws/2026/10/southwest-airlines-launches-first-of-its-kind-u-s-airline-plugin-in-chatgpt"
       }
     ],
-    "notes": "Home returned 200 but only 7,550 bytes, which looks like a shell or interstitial rather than the full site. robots.txt allows crawlers except /v2/. No public booking API or agent checkout path known."
+    "notes": "Home returned 200 but only 7,550 bytes, which looks like a shell or interstitial rather than the full site. robots.txt allows crawlers except /v2/. No public booking API or agent checkout path known. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run."
   },
   {
     "id": "united",
@@ -303,22 +415,30 @@
       "agent_checkout": 3,
       "structured_paths": 3,
       "email": 5,
-      "sms": 7,
+      "sms": 6,
       "live_chat": 8,
       "book_online": 10
     },
-    "total": 40,
+    "total": 39,
     "evidence": [
       {
-        "label": "Crawl 2026-10-13: home HTTP 000 (7550 bytes), robots HTTP 000, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 0",
+        "label": "Crawl 2026-10-13 (update run): home HTTP 000 (0 bytes), robots HTTP 000 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
         "label": "Live robots.txt",
         "url": "https://www.united.com/robots.txt"
+      },
+      {
+        "label": "sms: partial - Text HELP to 71529/26266 for alert programs; mainly one-way alerts",
+        "url": "https://cloud.enews.united.com/text-messaging-terms.html"
+      },
+      {
+        "label": "book online: yes - Booking on united.com and app",
+        "url": "https://www.united.com"
       }
     ],
-    "notes": "Request timed out (HTTP 000); robots.txt was not retrieved. The saved robots_united.txt is byte-identical to Southwest's and was NOT used as evidence. Bot access is scored low pending a re-run."
+    "notes": "Request timed out (HTTP 000); robots.txt was not retrieved. The saved robots_united.txt is byte-identical to Southwest's and was NOT used as evidence. Bot access is scored low pending a re-run. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Retried with bot and browser UAs plus a second network: still timeout / HTTP 500."
   },
   {
     "id": "expedia",
@@ -332,14 +452,14 @@
       "agent_checkout": 8,
       "structured_paths": 12,
       "email": 6,
-      "sms": 3,
-      "live_chat": 8,
-      "book_online": 9
+      "sms": 6,
+      "live_chat": 9,
+      "book_online": 10
     },
-    "total": 54,
+    "total": 59,
     "evidence": [
       {
-        "label": "Crawl 2026-10-13: home HTTP 429 (25067 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 0",
+        "label": "Crawl 2026-10-13 (update run): home HTTP 429 (25091 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -353,9 +473,29 @@
       {
         "label": "Expedia Group developer hub",
         "url": "https://developers.expediagroup.com/"
+      },
+      {
+        "label": "email: partial - Postal address and Help Center; direct email not confirmed",
+        "url": "https://www.expedia.com/lp/b/getintouch"
+      },
+      {
+        "label": "book online: yes - Book flights, hotels, cars on expedia.com and app",
+        "url": "https://www.expedia.com"
+      },
+      {
+        "label": "api: partial - Rapid/Lodging Supply APIs for approved partners",
+        "url": "https://developers.expediagroup.com/docs/ai-solutions"
+      },
+      {
+        "label": "mcp: partial - B2B MCP server announced May 2026 (going live 'in coming months'); dev docs describe a Lodging Supply dev MCP; AI solutions page says exploration phase, access via account manager",
+        "url": "https://skift.com/2026/05/21/expedia-to-launch-agentic-ai-tools-for-b2b-partners/"
+      },
+      {
+        "label": "agent payments: partial - Launch partner app in ChatGPT (OpenAI announcement); in-chat checkout not confirmed",
+        "url": "https://openai.com/index/introducing-apps-in-chatgpt/"
       }
     ],
-    "notes": "Bot UA was rate limited (HTTP 429). robots.txt explicitly allows OAI-SearchBot, ChatGPT-User, Claude-User, Claude-SearchBot, so intent is agent-friendly."
+    "notes": "Bot UA was rate limited (HTTP 429). robots.txt explicitly allows OAI-SearchBot, ChatGPT-User, Claude-User, Claude-SearchBot, so intent is agent-friendly. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run."
   },
   {
     "id": "airbnb",
@@ -368,15 +508,15 @@
       "bot_access": 8,
       "agent_checkout": 3,
       "structured_paths": 3,
-      "email": 7,
+      "email": 2,
       "sms": 2,
-      "live_chat": 8,
+      "live_chat": 9,
       "book_online": 10
     },
-    "total": 41,
+    "total": 37,
     "evidence": [
       {
-        "label": "Crawl 2026-10-13: home HTTP 200 (684737 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 2, AI-agent mentions 1",
+        "label": "Crawl 2026-10-13 (update run): home HTTP 200 (691223 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 2",
         "url": "data/evidence.csv"
       },
       {
@@ -386,9 +526,21 @@
       {
         "label": "Live robots.txt",
         "url": "https://www.airbnb.com/robots.txt"
+      },
+      {
+        "label": "email: no - Official contact article lists chat/messaging and phone only",
+        "url": "https://www.airbnb.com/help/article/1542"
+      },
+      {
+        "label": "book online: yes - Book stays, experiences, services online",
+        "url": "https://www.airbnb.com"
+      },
+      {
+        "label": "agent payments: no - No official ChatGPT app/agentic checkout found; CEO said Oct 2025 ChatGPT not ready",
+        "url": "https://fortune.com/2025/10/21/brian-chesky-openai-tools-not-ready"
       }
     ],
-    "notes": "Home reachable, but robots.txt fully disallows GPTBot and ClaudeBot (2 matches). No public booking API."
+    "notes": "Home reachable, but robots.txt fully disallows GPTBot and ClaudeBot (2 matches). No public booking API. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run."
   },
   {
     "id": "hyatt",
@@ -401,23 +553,35 @@
       "bot_access": 3,
       "agent_checkout": 3,
       "structured_paths": 3,
-      "email": 6,
-      "sms": 8,
+      "email": 9,
+      "sms": 6,
       "live_chat": 9,
-      "book_online": 9
+      "book_online": 10
     },
-    "total": 41,
+    "total": 43,
     "evidence": [
       {
-        "label": "Crawl 2026-10-13: home HTTP 403 (12858 bytes), robots HTTP 403, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 0",
+        "label": "Crawl 2026-10-13 (update run): home HTTP 403 (12858 bytes), robots HTTP 403 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
         "label": "Live robots.txt",
         "url": "https://www.hyatt.com/robots.txt"
+      },
+      {
+        "label": "email: yes - Customer service email consumeraffairs@hyatt.com and feedback form",
+        "url": "https://www.hyatt.com/help/en-US/contact/contact-us"
+      },
+      {
+        "label": "sms: partial - Text service for US stay guests; reply HELP/STOP",
+        "url": "https://www.hyatt.com/help/terms/sms"
+      },
+      {
+        "label": "book online: yes - Book on hyatt.com and app",
+        "url": "https://www.hyatt.com"
       }
     ],
-    "notes": "HTTP 403 on both home and robots.txt; the saved robots_hyatt.txt is an HTML error page, not a robots file. Chat and text concierge credit comes from public knowledge of Hyatt Messaging, not from the crawl."
+    "notes": "HTTP 403 on both home and robots.txt; the saved robots_hyatt.txt is an HTML error page, not a robots file. Chat and text concierge credit comes from public knowledge of Hyatt Messaging, not from the crawl. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Retried robots.txt: still no valid robots file (Hyatt 403 error page, Resy serves its HTML app shell)."
   },
   {
     "id": "opentable",
@@ -430,15 +594,15 @@
       "bot_access": 17,
       "agent_checkout": 10,
       "structured_paths": 8,
-      "email": 6,
+      "email": 9,
       "sms": 3,
-      "live_chat": 4,
+      "live_chat": 9,
       "book_online": 10
     },
-    "total": 58,
+    "total": 66,
     "evidence": [
       {
-        "label": "Crawl 2026-10-13: home HTTP 200 (542201 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 2",
+        "label": "Crawl 2026-10-13 (update run): home HTTP 200 (542248 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -448,9 +612,17 @@
       {
         "label": "Live robots.txt",
         "url": "https://www.opentable.com/robots.txt"
+      },
+      {
+        "label": "email: yes - Diner help center contact-support page (web form); restaurants get email support. Page not loadable; per search snippets",
+        "url": "https://help.opentable.com/s/contactsupport"
+      },
+      {
+        "label": "book online: yes - Online/app reservations are the core product",
+        "url": "https://www.opentable.com"
       }
     ],
-    "notes": "Home reachable, large robots.txt with per-bot groups (including AI search bots) that block admin/internal paths and also booking paths. Online booking is the core product; agent-booking partnerships credited conservatively."
+    "notes": "Home reachable, large robots.txt with per-bot groups (including AI search bots) that block admin/internal paths and also booking paths. Online booking is the core product; agent-booking partnerships credited conservatively. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run."
   },
   {
     "id": "resy",
@@ -463,23 +635,35 @@
       "bot_access": 12,
       "agent_checkout": 4,
       "structured_paths": 3,
-      "email": 6,
+      "email": 9,
       "sms": 2,
-      "live_chat": 3,
+      "live_chat": 6,
       "book_online": 10
     },
-    "total": 40,
+    "total": 46,
     "evidence": [
       {
-        "label": "Crawl 2026-10-13: home HTTP 200 (5255 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 1",
+        "label": "Crawl 2026-10-13 (update run): home HTTP 200 (5255 bytes), robots HTTP 200 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
         "label": "Live robots.txt",
         "url": "https://resy.com/robots.txt"
+      },
+      {
+        "label": "email: yes - help@resy.com for diners (official helpdesk, via search result)",
+        "url": "https://helpdesk.resy.com/en/articles/2780879-how-to-contact-resy-support"
+      },
+      {
+        "label": "book online: yes - Online/app reservations",
+        "url": "https://resy.com"
+      },
+      {
+        "label": "api: partial - Partner-only; no public developer portal (secondary sources)",
+        "url": "https://resy.com/about"
       }
     ],
-    "notes": "Home returned 200 but only 5,255 bytes (JS app shell). The saved robots_resy.txt is the same HTML shell, so no real robots.txt was found. No public API."
+    "notes": "Home returned 200 but only 5,255 bytes (JS app shell). The saved robots_resy.txt is the same HTML shell, so no real robots.txt was found. No public API. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Retried robots.txt: still no valid robots file (Hyatt 403 error page, Resy serves its HTML app shell)."
   },
   {
     "id": "doordash",
@@ -492,15 +676,15 @@
       "bot_access": 5,
       "agent_checkout": 8,
       "structured_paths": 8,
-      "email": 5,
+      "email": 6,
       "sms": 4,
       "live_chat": 9,
       "book_online": 10
     },
-    "total": 49,
+    "total": 50,
     "evidence": [
       {
-        "label": "Crawl 2026-10-13: home HTTP 403 (5481 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 0",
+        "label": "Crawl 2026-10-13 (update run): home HTTP 403 (5587 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -514,9 +698,25 @@
       {
         "label": "DoorDash developer docs",
         "url": "https://developer.doordash.com/"
+      },
+      {
+        "label": "email: partial - Email for merchants/Drive/business; consumers use chat/phone, no consumer email found",
+        "url": "https://help.doordash.com/en-us/consumers"
+      },
+      {
+        "label": "book online: yes - App/web ordering",
+        "url": "https://www.doordash.com"
+      },
+      {
+        "label": "api: yes - Developer portal (Drive, Marketplace); credentials via developer portal, business relationship may be needed",
+        "url": "https://developer.doordash.com/en-US/"
+      },
+      {
+        "label": "mcp: partial - Official newsroom Sep 30 2026: office-ordering connector with 'DoorDash MCP' demo, beta waitlist",
+        "url": "https://about.doordash.com/en-us/news"
       }
     ],
-    "notes": "Bot UA received HTTP 403 on home; robots.txt reachable and does not name AI crawlers but disallows /consumer/ and /orders/."
+    "notes": "Bot UA received HTTP 403 on home; robots.txt reachable and does not name AI crawlers but disallows /consumer/ and /orders/. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run."
   },
   {
     "id": "greatclips",
@@ -529,15 +729,15 @@
       "bot_access": 18,
       "agent_checkout": 4,
       "structured_paths": 2,
-      "email": 4,
-      "sms": 5,
+      "email": 9,
+      "sms": 6,
       "live_chat": 2,
-      "book_online": 8
+      "book_online": 10
     },
-    "total": 43,
+    "total": 51,
     "evidence": [
       {
-        "label": "Crawl 2026-10-13: home HTTP 200 (97494 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 0",
+        "label": "Crawl 2026-10-13 (update run): home HTTP 200 (97494 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -547,9 +747,21 @@
       {
         "label": "Live robots.txt",
         "url": "https://www.greatclips.com/robots.txt"
+      },
+      {
+        "label": "email: yes - Customer service page has email address (obfuscated) and a contact form",
+        "url": "https://www.greatclips.com/customer-service"
+      },
+      {
+        "label": "sms: partial - Text alerts for online check-in (reply YES opt-in, wait-time and running-late texts); not a two-way support channel",
+        "url": "https://www.greatclips.com/sms-terms"
+      },
+      {
+        "label": "book online: yes - Online check-in via website/app up to 15 min before close",
+        "url": "https://www.greatclips.com/online-check-in"
       }
     ],
-    "notes": "Home and robots.txt reachable; no AI blocks. Online check-in exists; text notifications for waitlist. No public API or agent path."
+    "notes": "Home and robots.txt reachable; no AI blocks. Online check-in exists; text notifications for waitlist. No public API or agent path. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run."
   },
   {
     "id": "aspendental",
@@ -562,15 +774,15 @@
       "bot_access": 18,
       "agent_checkout": 4,
       "structured_paths": 2,
-      "email": 5,
+      "email": 9,
       "sms": 2,
-      "live_chat": 4,
-      "book_online": 8
+      "live_chat": 6,
+      "book_online": 10
     },
-    "total": 43,
+    "total": 51,
     "evidence": [
       {
-        "label": "Crawl 2026-10-13: home HTTP 200 (3698506 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 1",
+        "label": "Crawl 2026-10-13 (update run): home HTTP 200 (3698457 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -580,9 +792,13 @@
       {
         "label": "Live robots.txt",
         "url": "https://www.aspendental.com/robots.txt"
+      },
+      {
+        "label": "email: yes - customerservice@aspendental.com",
+        "url": "https://www.aspendental.com/about/contact-us/"
       }
     ],
-    "notes": "Fully open robots.txt (Allow: /). Online appointment scheduling is available; no API or agent path known."
+    "notes": "Fully open robots.txt (Allow: /). Online appointment scheduling is available; no API or agent path known. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run."
   },
   {
     "id": "instacart",
@@ -594,16 +810,16 @@
     "subscores": {
       "bot_access": 15,
       "agent_checkout": 15,
-      "structured_paths": 13,
+      "structured_paths": 14,
       "email": 7,
-      "sms": 5,
+      "sms": 6,
       "live_chat": 9,
       "book_online": 10
     },
-    "total": 74,
+    "total": 76,
     "evidence": [
       {
-        "label": "Crawl 2026-10-13: home HTTP 200 (595833 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 0",
+        "label": "Crawl 2026-10-13 (update run): home HTTP 200 (601313 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -617,8 +833,163 @@
       {
         "label": "Instacart Developer Platform",
         "url": "https://docs.instacart.com/developer_platform_api/"
+      },
+      {
+        "label": "sms: partial - SMS threads with shopper during active orders; no standalone support text line",
+        "url": "https://docs.instacart.com/connect/post-checkout_guide/concepts/chat/"
+      },
+      {
+        "label": "live chat: yes - Help center live chat/virtual assistant, plus shopper chat",
+        "url": "https://www.instacart.com/help/section/809794019/1992925010"
+      },
+      {
+        "label": "book online: yes - App/web ordering",
+        "url": "https://www.instacart.com"
+      },
+      {
+        "label": "mcp: yes - Official MCP server docs (consumer OAuth server; Developer Platform MCP with API key)",
+        "url": "https://docs.instacart.com/mcp_servers/"
+      },
+      {
+        "label": "agent payments: yes - ChatGPT app with Instant Checkout via Agentic Commerce Protocol/Stripe, launched Dec 8 2025 (trade press; official post URL returned 404)",
+        "url": "https://company.instacart.com/updates"
       }
     ],
-    "notes": "Home reachable. robots.txt allows OAI-SearchBot and ChatGPT-User with path limits, blocks PerplexityBot/Perplexity-User. Public ChatGPT checkout app and developer API credited."
+    "notes": "Home reachable. robots.txt allows OAI-SearchBot and ChatGPT-User with path limits, blocks PerplexityBot/Perplexity-User. Public ChatGPT checkout app and developer API credited. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run."
+  },
+  {
+    "id": "homedepot",
+    "name": "The Home Depot",
+    "category": "Retail",
+    "url": "https://www.homedepot.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 5,
+      "agent_checkout": 5,
+      "structured_paths": 4,
+      "email": 6,
+      "sms": 9,
+      "live_chat": 9,
+      "book_online": 10
+    },
+    "total": 48,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13 (update run): home HTTP 403 (371 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "robots.txt (saved copy)",
+        "url": "data/raw/robots_homedepot.txt"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.homedepot.com/robots.txt"
+      },
+      {
+        "label": "email: partial - Contact Us web form on site; no direct email address",
+        "url": "https://www.homedepot.com/c/Customer_Support_Answers"
+      },
+      {
+        "label": "book online: yes - Online ordering and services booking",
+        "url": "https://www.homedepot.com"
+      },
+      {
+        "label": "api: no - No public developer API found",
+        "url": "https://corporate.homedepot.com"
+      }
+    ],
+    "notes": "Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run."
+  },
+  {
+    "id": "booking",
+    "name": "Booking.com",
+    "category": "Travel",
+    "url": "https://www.booking.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 6,
+      "agent_checkout": 7,
+      "structured_paths": 12,
+      "email": 6,
+      "sms": 3,
+      "live_chat": 9,
+      "book_online": 10
+    },
+    "total": 53,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13 (update run): home HTTP 202 (3962 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "robots.txt (saved copy)",
+        "url": "data/raw/robots_booking.txt"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.booking.com/robots.txt"
+      },
+      {
+        "label": "email: partial - Help Center messaging with agents; direct email not confirmed",
+        "url": "https://www.booking.com/customer-service.html"
+      },
+      {
+        "label": "book online: yes - Book on booking.com and app",
+        "url": "https://www.booking.com"
+      },
+      {
+        "label": "api: partial - Demand API for approved affiliate partners",
+        "url": "https://developers.booking.com/mcp-server/docs/get-started"
+      },
+      {
+        "label": "agent payments: partial - Launch partner app in ChatGPT; transactions complete on Booking.com; no AP2/UCP/Visa confirmed",
+        "url": "https://openai.com/index/introducing-apps-in-chatgpt/"
+      }
+    ],
+    "notes": "Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run."
+  },
+  {
+    "id": "chipotle",
+    "name": "Chipotle",
+    "category": "Restaurant ordering",
+    "url": "https://www.chipotle.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 18,
+      "agent_checkout": 4,
+      "structured_paths": 2,
+      "email": 6,
+      "sms": 3,
+      "live_chat": 6,
+      "book_online": 10
+    },
+    "total": 49,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13 (update run): home HTTP 200 (69329 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "robots.txt (saved copy)",
+        "url": "data/raw/robots_chipotle.txt"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.chipotle.com/robots.txt"
+      },
+      {
+        "label": "email: partial - Contact-us web form (content not readable); no email address verified",
+        "url": "https://www.chipotle.com/contact-us"
+      },
+      {
+        "label": "book online: yes - Online/app ordering",
+        "url": "https://www.chipotle.com"
+      }
+    ],
+    "notes": "Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run."
   }
 ]
