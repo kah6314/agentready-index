@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.aspendental.com
+
+# Sitemaps
+Sitemap: https://www.aspendental.com/sitemap-index.xml
+Sitemap: https://www.aspendental.com/dentist/sitemap-index.xml
+Sitemap: https://www.aspendental.com/schedule-an-appointment/sitemap-index.xml

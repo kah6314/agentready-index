@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /application/*
+Disallow: /wld/*
+Disallow: /blog/blog-topic
+Disallow: /UTbaseball
+Sitemap: https://www.greatclips.com/api/vtl/sitemap
