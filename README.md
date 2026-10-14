@@ -1,6 +1,6 @@
 # AgentReady Index (site)
 
-Static site ranking how agent-friendly 18 commerce platforms are. Plain HTML/CSS/JS; `index.html` and `changes.html` fetch `data/*.json`, so serve over HTTP:
+Static site ranking how agent-friendly 21 commerce platforms are. Plain HTML/CSS/JS; `index.html` and `changes.html` fetch `data/*.json`, so serve over HTTP:
 
     cd site && python3 -m http.server 8000
 
