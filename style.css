@@ -27,3 +27,10 @@ tr.detail td{background:#fafbfd;padding:14px 16px}
 footer{padding-top:24px;padding-bottom:40px;color:var(--mut);font-size:.9rem;border-top:1px solid var(--line);margin-top:40px}
 .rub td:last-child,.rub th:last-child{text-align:right}
 .log h2{margin-bottom:.2em}
+.brand{display:inline-flex;align-items:center;gap:8px}.hero{padding:8px 0 4px}
+td a{color:var(--fg);text-decoration:none;font-weight:600}td a:hover{color:var(--acc)}
+.score{display:flex;align-items:center;gap:14px;margin:12px 0 4px}.score span{font-size:2.6rem;font-weight:800}.score .bar{flex:1;max-width:360px;height:10px}
+.score.high span{color:var(--ok)}.score.mid span{color:var(--mid)}.score.low span{color:var(--low)}
+.faq h3{font-size:1.05rem;margin:1.2em 0 .2em}.faq p{margin:.2em 0 .8em;max-width:70ch}
+.post{max-width:70ch}.post p,.post li{font-size:1.04rem}
+footer a,.lead a,main p a{color:var(--acc)}

@@ -1,10 +1,21 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Changes - AgentReady Index</title><meta name="description" content="How agent-friendly are major commerce platforms? Preliminary AgentReady Index scores."><link rel="stylesheet" href="style.css"></head><body>
-<header><a class="brand" href="index.html">AgentReady Index</a><nav><a href="index.html" >Rankings</a><a href="methodology.html" >Methodology</a><a href="changes.html" aria-current=page>Changes</a></nav></header>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Change log | AgentReady Index</title><meta name="description" content="Release notes and score changes for the AgentReady Index."><link rel="canonical" href="https://kah6314.github.io/agentready-index/changes.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="AgentReady Index"><meta property="og:title" content="Change log | AgentReady Index"><meta property="og:description" content="Release notes and score changes for the AgentReady Index."><meta property="og:url" content="https://kah6314.github.io/agentready-index/changes.html"><meta property="og:image" content="https://kah6314.github.io/agentready-index/og.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Change log | AgentReady Index"><meta name="twitter:description" content="Release notes and score changes for the AgentReady Index."><meta name="twitter:image" content="https://kah6314.github.io/agentready-index/og.png">
+<link rel="icon" href="/agentready-index/favicon.svg" type="image/svg+xml"><link rel="icon" href="/agentready-index/favicon.png" sizes="32x32"><link rel="alternate" type="application/json" href="/agentready-index/data/sites.json" title="AgentReady Index data"><link rel="stylesheet" href="/agentready-index/style.css"></head><body>
+<header><a class="brand" href="/agentready-index/"><img src="/agentready-index/favicon.svg" alt="" width="22" height="22"> AgentReady Index</a><nav><a href="/agentready-index/">Rankings</a><a href="/agentready-index/stores/">Stores</a><a href="/agentready-index/launch.html">Launch post</a><a href="/agentready-index/methodology.html">Methodology</a><a href="/agentready-index/changes.html" aria-current=page>Changes</a><a href="/agentready-index/about.html">About</a></nav></header>
 <main>
 <h1>Change log</h1><div id="log" class="log">Loading...</div>
 </main>
-<footer><p>Preliminary scores, last updated Oct 13 2026</p></footer>
-<script>
-fetch("data/changelog.json").then(r=>r.json()).then(l=>{const el=document.getElementById("log");el.textContent="";l.forEach(e=>{const d=document.createElement("section"),h=document.createElement("h2"),u=document.createElement("ul");h.textContent=e.date+" - "+e.title;e.items.forEach(i=>{const li=document.createElement("li");li.textContent=i;u.append(li)});d.append(h,u);el.append(d)})}).catch(()=>{document.getElementById("log").textContent="Could not load changelog."});
+<footer><p><b>Last updated Oct 14, 2026.</b> Preliminary scores. Open data: <a href="/agentready-index/data/sites.json">sites.json</a> · <a href="/agentready-index/llms.txt">llms.txt</a> · <a href="/agentready-index/about.html">About</a></p></footer><!--gen--><script>
+fetch("/agentready-index/data/changelog.json").then(r=>r.json()).then(l=>{const el=document.getElementById("log");el.textContent="";l.forEach(e=>{const d=document.createElement("section"),h=document.createElement("h2"),u=document.createElement("ul");h.textContent=e.date+" - "+e.title;e.items.forEach(i=>{const li=document.createElement("li");li.textContent=i;u.append(li)});d.append(h,u);el.append(d)})}).catch(()=>{document.getElementById("log").textContent="Could not load changelog."});
 </script>
+
+
+
+
+
+
+
+
 </body></html>

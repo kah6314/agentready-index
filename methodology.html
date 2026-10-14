@@ -1,5 +1,9 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Methodology - AgentReady Index</title><meta name="description" content="How agent-friendly are major commerce platforms? Preliminary AgentReady Index scores."><link rel="stylesheet" href="style.css"></head><body>
-<header><a class="brand" href="index.html">AgentReady Index</a><nav><a href="index.html" >Rankings</a><a href="methodology.html" aria-current=page>Methodology</a><a href="changes.html" >Changes</a></nav></header>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Methodology | AgentReady Index</title><meta name="description" content="How AgentReady Index scores are computed: rubric, crawl evidence, known data issues and limits."><link rel="canonical" href="https://kah6314.github.io/agentready-index/methodology.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="AgentReady Index"><meta property="og:title" content="Methodology | AgentReady Index"><meta property="og:description" content="How AgentReady Index scores are computed: rubric, crawl evidence, known data issues and limits."><meta property="og:url" content="https://kah6314.github.io/agentready-index/methodology.html"><meta property="og:image" content="https://kah6314.github.io/agentready-index/og.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Methodology | AgentReady Index"><meta name="twitter:description" content="How AgentReady Index scores are computed: rubric, crawl evidence, known data issues and limits."><meta name="twitter:image" content="https://kah6314.github.io/agentready-index/og.png">
+<link rel="icon" href="/agentready-index/favicon.svg" type="image/svg+xml"><link rel="icon" href="/agentready-index/favicon.png" sizes="32x32"><link rel="alternate" type="application/json" href="/agentready-index/data/sites.json" title="AgentReady Index data"><link rel="stylesheet" href="/agentready-index/style.css"></head><body>
+<header><a class="brand" href="/agentready-index/"><img src="/agentready-index/favicon.svg" alt="" width="22" height="22"> AgentReady Index</a><nav><a href="/agentready-index/">Rankings</a><a href="/agentready-index/stores/">Stores</a><a href="/agentready-index/launch.html">Launch post</a><a href="/agentready-index/methodology.html" aria-current=page>Methodology</a><a href="/agentready-index/changes.html">Changes</a><a href="/agentready-index/about.html">About</a></nav></header>
 <main>
 <h1>Methodology</h1>
 <p class="lead">Scores are preliminary. They combine a one-time automated crawl with public knowledge, and favour conservative scoring when unsure.</p>
@@ -14,12 +18,18 @@
 <tr><td>Book / reserve without calling</td><td>Complete the core task online or by text</td><td>10</td></tr>
 </tbody></table></div>
 <h2>Evidence</h2>
-<p>The crawl (2026-10-13) used curl with a bot user agent and recorded: home status and size, robots.txt status, the count of full disallows for GPTBot/ClaudeBot, and mentions of AI agents. The raw <a href="data/evidence.csv">evidence.csv</a> and robots files are published under <code>data/raw/</code>. The crawl did not record captcha/denied keywords; blocks are inferred from status codes (403, 429, 202 empty body) instead.</p>
+<p>The crawl (2026-10-13) used curl with a bot user agent and recorded: home status and size, robots.txt status, the count of full disallows for GPTBot/ClaudeBot, and mentions of AI agents. The raw <a href="/agentready-index/data/evidence.csv">evidence.csv</a> and robots files are published under <code>data/raw/</code>. The crawl did not record captcha/denied keywords; blocks are inferred from status codes (403, 429, 202 empty body) instead.</p>
 <h2>Known data issues</h2>
 <ul><li><b>United</b>: request timed out. The saved robots file duplicated Southwest&#39;s and was excluded.</li><li><b>Hyatt, Resy</b>: saved robots files were HTML, not robots.txt, and were excluded.</li><li><b>Amazon</b>: HTTP 202 with an empty body is treated as a bot challenge.</li><li>Single run from one network; results may differ by IP and time.</li></ul>
 <h2>Limits</h2>
-<p>Dimensions 2-7 rely on public information, not live testing, and may be out of date. Scores are not endorsements or audits. Corrections welcome; see the <a href="changes.html">change log</a>.</p>
+<p>Dimensions 2-7 rely on public information, not live testing, and may be out of date. Scores are not endorsements or audits. Corrections welcome; see the <a href="/agentready-index/changes.html">change log</a>.</p>
 </main>
-<footer><p>Preliminary scores, last updated Oct 13 2026</p></footer>
+<footer><p><b>Last updated Oct 14, 2026.</b> Preliminary scores. Open data: <a href="/agentready-index/data/sites.json">sites.json</a> · <a href="/agentready-index/llms.txt">llms.txt</a> · <a href="/agentready-index/about.html">About</a></p></footer><!--gen-->
+
+
+
+
+
+
 
 </body></html>

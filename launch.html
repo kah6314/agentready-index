@@ -1,0 +1,56 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>We tested 21 stores to see which let AI agents shop | AgentReady Index</title><meta name="description" content="We scored 21 big online stores on how well they let AI agents browse, buy and book. Here is who is ready and who is blocking."><link rel="canonical" href="https://kah6314.github.io/agentready-index/launch.html">
+<meta property="og:type" content="website"><meta property="og:site_name" content="AgentReady Index"><meta property="og:title" content="We tested 21 stores to see which let AI agents shop | AgentReady Index"><meta property="og:description" content="We scored 21 big online stores on how well they let AI agents browse, buy and book. Here is who is ready and who is blocking."><meta property="og:url" content="https://kah6314.github.io/agentready-index/launch.html"><meta property="og:image" content="https://kah6314.github.io/agentready-index/og.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="We tested 21 stores to see which let AI agents shop | AgentReady Index"><meta name="twitter:description" content="We scored 21 big online stores on how well they let AI agents browse, buy and book. Here is who is ready and who is blocking."><meta name="twitter:image" content="https://kah6314.github.io/agentready-index/og.png">
+<link rel="icon" href="/agentready-index/favicon.svg" type="image/svg+xml"><link rel="icon" href="/agentready-index/favicon.png" sizes="32x32"><link rel="alternate" type="application/json" href="/agentready-index/data/sites.json" title="AgentReady Index data"><link rel="stylesheet" href="/agentready-index/style.css"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "We tested 21 stores to see which let AI agents shop", "datePublished": "2026-10-14", "dateModified": "2026-10-14", "author": {"@type": "Person", "name": "Kevin Harmon"}, "publisher": {"@context": "https://schema.org", "@type": "Organization", "name": "AgentReady Index", "url": "https://kah6314.github.io/agentready-index/", "logo": "https://kah6314.github.io/agentready-index/favicon.png", "founder": {"@type": "Person", "name": "Kevin Harmon"}}, "image": "https://kah6314.github.io/agentready-index/og.png", "mainEntityOfPage": "https://kah6314.github.io/agentready-index/launch.html"}</script></head><body>
+<header><a class="brand" href="/agentready-index/"><img src="/agentready-index/favicon.svg" alt="" width="22" height="22"> AgentReady Index</a><nav><a href="/agentready-index/">Rankings</a><a href="/agentready-index/stores/">Stores</a><a href="/agentready-index/launch.html" aria-current=page>Launch post</a><a href="/agentready-index/methodology.html">Methodology</a><a href="/agentready-index/changes.html">Changes</a><a href="/agentready-index/about.html">About</a></nav></header>
+<main><article class="post"><p class="mut">By Kevin Harmon · Oct 14, 2026</p><h1>We tested 21 stores to see which let AI agents shop</h1><h2>Why we ran this</h2>
+<p>More shoppers now ask an AI agent to find the product, compare prices, or book the table. The agent can only act where the business lets it in. If the door is closed, the sale goes to someone else.</p>
+<p>My thesis is simple. Businesses that welcome AI-agent shoppers will win. So we scored 21 stores and platforms on how well they let agents shop and book. This is the first cut of the AgentReady Index.</p>
+
+<h2>What we measured</h2>
+<p>Each site gets a score from 0 to 100. It is the sum of seven parts:</p>
+<ul>
+<li>Bot access: can an agent reach the site and its robots.txt?</li>
+<li>Agent checkout: is there a public path for an agent to complete a purchase?</li>
+<li>Structured paths: APIs, MCP, or other machine-readable routes.</li>
+<li>Email, text, and live chat: can the business be reached?</li>
+<li>Book online: can the booking be made without a phone call?</li>
+</ul>
+<p>We crawled the sites on 2026-10-13 and read public documentation. Detail is on the <a href="/agentready-index/methodology.html">methodology page</a>.</p>
+
+<h2>The top five</h2>
+<ol>
+<li>Allbirds (Retail, Shopify): 86</li>
+<li>Instacart (Delivery): 76</li>
+<li>Walmart (Retail): 73</li>
+<li>Target (Retail): 66</li>
+<li>OpenTable (Reservations): 66</li>
+</ol>
+<p>Allbirds leads by ten points. It scores 15 on agent checkout and 15 on structured paths. Instacart also scores 15 on agent checkout. Walmart scores 14.</p>
+
+<h2>The bottom five</h2>
+<ol>
+<li>Airbnb (Travel): 37</li>
+<li>United Airlines: 39</li>
+<li>Hyatt (Hotel): 43</li>
+<li>Amazon (Marketplace): 45</li>
+<li>eBay (Marketplace) and Resy (Reservations): 46 each</li>
+</ol>
+<p>The spread from first place to last is 49 points.</p>
+
+<h2>Three patterns</h2>
+<p><strong>1. Some big names block the door.</strong> Amazon's robots.txt fully disallows GPTBot and ClaudeBot, and our bot request got an empty challenge response. Its bot access score is 2. Airbnb also disallows both bots. eBay's robots.txt disallows GPTBot, ClaudeBot, and anthropic-ai, and our request got a 403. Hyatt, Etsy, and DoorDash also returned a 403 to our bot.</p>
+<p><strong>2. Open is not the same as ready.</strong> Chipotle, Great Clips, and Aspen Dental each score 18 on bot access. Their agent checkout scores are 4, and their structured paths scores are 2. The door is open, but we found nothing behind it. Expedia shows a different problem. Its robots.txt explicitly allows several AI agents, yet our bot was rate limited with an HTTP 429. Its bot access score is 8.</p>
+<p><strong>3. The gap opens at the door and the checkout.</strong> Every site scores 10 on book online. Live chat sits at 9 for most. Those parts barely separate leaders from laggards. Bot access, agent checkout, and structured paths do. eBay shows the cost of mixed signals. Strong public APIs earn it 14 on structured paths, but a blocked door holds the total to 46.</p>
+
+<h2>Caveats</h2>
+<p>These scores are preliminary. We have not run live checkout tests yet. Agent checkout and contact-channel scores rest on public documentation and are estimates. Some crawls hit errors. United's request timed out, so we did not retrieve its robots.txt. Hyatt returned a 403 on its robots.txt. Those scores may move once we can reach the sites. One crawl on one day is a snapshot, not a verdict. Allbirds' result also draws on checkout that Shopify provides by platform default, so it reflects the platform as much as the brand.</p>
+
+<h2>Corrections welcome</h2>
+<p>If we got your site wrong, tell us. Send evidence, and we will re-score and note the change. The full dataset is at <a href="/agentready-index/data/sites.json">/data/sites.json</a>. The method is at <a href="/agentready-index/methodology.html">/methodology.html</a>.</p>
+<p>If you run a business, the first step is cheap. Check your robots.txt. Check what your own bot filters return. Then ask whether an agent could actually buy from you.</p>
+</article><section class="card signup" id="signup"><h2>Get the weekly update</h2><p class="mut">Signup opens soon. This form is not connected yet and stores nothing.</p>
+<form method="post" action="#" onsubmit="return false"><input type="email" name="email_address" required placeholder="you@example.com" aria-label="Email" disabled><button disabled>Coming soon</button></form></section></main>
+<footer><p><b>Last updated Oct 14, 2026.</b> Preliminary scores. Open data: <a href="/agentready-index/data/sites.json">sites.json</a> · <a href="/agentready-index/llms.txt">llms.txt</a> · <a href="/agentready-index/about.html">About</a></p></footer>
+</body></html>
