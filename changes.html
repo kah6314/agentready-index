@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Changes - AgentReady Index</title><meta name="description" content="How agent-friendly are major commerce platforms? Preliminary AgentReady Index scores."><link rel="stylesheet" href="style.css"></head><body>
+<header><a class="brand" href="index.html">AgentReady Index</a><nav><a href="index.html" >Rankings</a><a href="methodology.html" >Methodology</a><a href="changes.html" aria-current=page>Changes</a></nav></header>
+<main>
+<h1>Change log</h1><div id="log" class="log">Loading...</div>
+</main>
+<footer><p>Preliminary scores, last updated Oct 13 2026</p></footer>
+<script>
+fetch("data/changelog.json").then(r=>r.json()).then(l=>{const el=document.getElementById("log");el.textContent="";l.forEach(e=>{const d=document.createElement("section"),h=document.createElement("h2"),u=document.createElement("ul");h.textContent=e.date+" - "+e.title;e.items.forEach(i=>{const li=document.createElement("li");li.textContent=i;u.append(li)});d.append(h,u);el.append(d)})}).catch(()=>{document.getElementById("log").textContent="Could not load changelog."});
+</script>
+</body></html>

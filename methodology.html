@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Methodology - AgentReady Index</title><meta name="description" content="How agent-friendly are major commerce platforms? Preliminary AgentReady Index scores."><link rel="stylesheet" href="style.css"></head><body>
+<header><a class="brand" href="index.html">AgentReady Index</a><nav><a href="index.html" >Rankings</a><a href="methodology.html" aria-current=page>Methodology</a><a href="changes.html" >Changes</a></nav></header>
+<main>
+<h1>Methodology</h1>
+<p class="lead">Scores are preliminary. They combine a one-time automated crawl with public knowledge, and favour conservative scoring when unsure.</p>
+<h2>Rubric (100 points)</h2>
+<div class="tablewrap"><table class="rub"><thead><tr><th>Dimension</th><th>What we look at</th><th>Points</th></tr></thead><tbody>
+<tr><td>Bot access</td><td>Home page status for a bot user agent, robots.txt status, full Disallow for GPTBot/ClaudeBot, bot challenges or timeouts</td><td>20</td></tr>
+<tr><td>Agent checkout / booking</td><td>Can an agent complete a purchase or booking (e.g. Shopify agentic checkout / UCP, ChatGPT checkout partnerships, reservation integrations)?</td><td>20</td></tr>
+<tr><td>Structured / API / MCP / agent payment</td><td>Public APIs, MCP servers, feeds, agent-payment paths</td><td>20</td></tr>
+<tr><td>Email support</td><td>Non-voice contact by email</td><td>10</td></tr>
+<tr><td>Text / SMS</td><td>Two-way or transactional text support</td><td>10</td></tr>
+<tr><td>Live chat</td><td>Live or assistant chat</td><td>10</td></tr>
+<tr><td>Book / reserve without calling</td><td>Complete the core task online or by text</td><td>10</td></tr>
+</tbody></table></div>
+<h2>Evidence</h2>
+<p>The crawl (2026-10-13) used curl with a bot user agent and recorded: home status and size, robots.txt status, the count of full disallows for GPTBot/ClaudeBot, and mentions of AI agents. The raw <a href="data/evidence.csv">evidence.csv</a> and robots files are published under <code>data/raw/</code>. The crawl did not record captcha/denied keywords; blocks are inferred from status codes (403, 429, 202 empty body) instead.</p>
+<h2>Known data issues</h2>
+<ul><li><b>United</b>: request timed out. The saved robots file duplicated Southwest&#39;s and was excluded.</li><li><b>Hyatt, Resy</b>: saved robots files were HTML, not robots.txt, and were excluded.</li><li><b>Amazon</b>: HTTP 202 with an empty body is treated as a bot challenge.</li><li>Single run from one network; results may differ by IP and time.</li></ul>
+<h2>Limits</h2>
+<p>Dimensions 2-7 rely on public information, not live testing, and may be out of date. Scores are not endorsements or audits. Corrections welcome; see the <a href="changes.html">change log</a>.</p>
+</main>
+<footer><p>Preliminary scores, last updated Oct 13 2026</p></footer>
+
+</body></html>
