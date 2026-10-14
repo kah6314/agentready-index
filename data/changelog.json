@@ -1,0 +1,13 @@
+[
+  {
+    "date": "2026-10-13",
+    "title": "Initial preliminary release",
+    "items": [
+      "Scored 18 platforms against the 100-point rubric.",
+      "Crawl run with a bot user agent; evidence.csv and robots files published under data/.",
+      "united: request timed out; saved robots file was a duplicate of Southwest and was excluded.",
+      "hyatt and resy: saved robots files were HTML, not robots.txt; excluded.",
+      "All scores are preliminary."
+    ]
+  }
+]

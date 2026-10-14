@@ -1,0 +1,624 @@
+[
+  {
+    "id": "amazon",
+    "name": "Amazon",
+    "category": "Marketplace",
+    "url": "https://www.amazon.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 2,
+      "agent_checkout": 6,
+      "structured_paths": 8,
+      "email": 5,
+      "sms": 4,
+      "live_chat": 10,
+      "book_online": 10
+    },
+    "total": 45,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13: home HTTP 202 (0 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 4, AI-agent mentions 0",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "robots.txt (saved copy)",
+        "url": "data/raw/robots_amazon.txt"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.amazon.com/robots.txt"
+      },
+      {
+        "label": "Selling Partner API docs",
+        "url": "https://developer-docs.amazon.com/sp-api/"
+      }
+    ],
+    "notes": "Bot UA gets HTTP 202 with an empty body (bot challenge). robots.txt has full Disallow for GPTBot and ClaudeBot (4 groups matched). No third-party agent checkout path we are confident of."
+  },
+  {
+    "id": "walmart",
+    "name": "Walmart",
+    "category": "Retail",
+    "url": "https://www.walmart.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 18,
+      "agent_checkout": 14,
+      "structured_paths": 10,
+      "email": 6,
+      "sms": 6,
+      "live_chat": 9,
+      "book_online": 10
+    },
+    "total": 73,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13: home HTTP 200 (374587 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 2",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "robots.txt (saved copy)",
+        "url": "data/raw/robots_walmart.txt"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.walmart.com/robots.txt"
+      },
+      {
+        "label": "Walmart developer portal",
+        "url": "https://developer.walmart.com/"
+      }
+    ],
+    "notes": "Home page and robots.txt reachable; no AI crawler full blocks. Public ChatGPT checkout partnership credited conservatively; channel scores are estimates from public help pages."
+  },
+  {
+    "id": "target",
+    "name": "Target",
+    "category": "Retail",
+    "url": "https://www.target.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 18,
+      "agent_checkout": 11,
+      "structured_paths": 6,
+      "email": 6,
+      "sms": 6,
+      "live_chat": 9,
+      "book_online": 10
+    },
+    "total": 66,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13: home HTTP 200 (416037 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 3",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "robots.txt (saved copy)",
+        "url": "data/raw/robots_target.txt"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.target.com/robots.txt"
+      }
+    ],
+    "notes": "Home page and robots.txt reachable; no AI crawler blocks. Agent checkout score reflects a ChatGPT app presence only; no public developer API."
+  },
+  {
+    "id": "bestbuy",
+    "name": "Best Buy",
+    "category": "Retail",
+    "url": "https://www.bestbuy.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 15,
+      "agent_checkout": 4,
+      "structured_paths": 11,
+      "email": 6,
+      "sms": 6,
+      "live_chat": 9,
+      "book_online": 10
+    },
+    "total": 61,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13: home HTTP 200 (537001 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 3",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "robots.txt (saved copy)",
+        "url": "data/raw/robots_bestbuy.txt"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.bestbuy.com/robots.txt"
+      },
+      {
+        "label": "Best Buy Products API",
+        "url": "https://developer.bestbuy.com/"
+      }
+    ],
+    "notes": "Home reachable. robots.txt names AI agents (GPTBot, ClaudeBot, ChatGPT-User, etc.) but only allows /site/ and /discover-learn/ and blocks cart, fulfillment, pricing, so access is partial."
+  },
+  {
+    "id": "etsy",
+    "name": "Etsy",
+    "category": "Marketplace",
+    "url": "https://www.etsy.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 6,
+      "agent_checkout": 13,
+      "structured_paths": 11,
+      "email": 8,
+      "sms": 2,
+      "live_chat": 5,
+      "book_online": 10
+    },
+    "total": 55,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13: home HTTP 403 (776 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 1",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "robots.txt (saved copy)",
+        "url": "data/raw/robots_etsy.txt"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.etsy.com/robots.txt"
+      },
+      {
+        "label": "Etsy Open API v3",
+        "url": "https://developers.etsy.com/"
+      }
+    ],
+    "notes": "Bot UA received HTTP 403 on the home page (776 bytes); robots.txt restricts some crawler paths. Agent checkout credit is for the announced ChatGPT partnership (conservative)."
+  },
+  {
+    "id": "ebay",
+    "name": "eBay",
+    "category": "Marketplace",
+    "url": "https://www.ebay.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 3,
+      "agent_checkout": 5,
+      "structured_paths": 14,
+      "email": 6,
+      "sms": 3,
+      "live_chat": 8,
+      "book_online": 10
+    },
+    "total": 49,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13: home HTTP 403 (1832 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 1, AI-agent mentions 0",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "robots.txt (saved copy)",
+        "url": "data/raw/robots_ebay.txt"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.ebay.com/robots.txt"
+      },
+      {
+        "label": "eBay developer program",
+        "url": "https://developer.ebay.com/"
+      }
+    ],
+    "notes": "Bot UA received HTTP 403. robots.txt disallows GPTBot, ClaudeBot, anthropic-ai and others, with some exceptions to the disallow. Strong public APIs (Browse, Buy) lift the structured score."
+  },
+  {
+    "id": "allbirds",
+    "name": "Allbirds",
+    "category": "Retail (Shopify)",
+    "url": "https://www.allbirds.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 19,
+      "agent_checkout": 15,
+      "structured_paths": 15,
+      "email": 8,
+      "sms": 4,
+      "live_chat": 7,
+      "book_online": 10
+    },
+    "total": 78,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13: home HTTP 200 (714443 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 1",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "robots.txt (saved copy)",
+        "url": "data/raw/robots_allbirds.txt"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.allbirds.com/robots.txt"
+      },
+      {
+        "label": "Shopify agentic commerce docs",
+        "url": "https://shopify.dev/docs/agents"
+      },
+      {
+        "label": "Shopify UCP agentic checkout",
+        "url": "https://shopify.dev/docs/apps/build/storefront-mcp"
+      }
+    ],
+    "notes": "Shopify storefront: home and robots reachable; robots.txt restricts some crawler paths. Shopify merchants get Shopify UCP agentic checkout by platform default (https://shopify.dev/docs/apps/build/storefront-mcp); score assumes the platform defaults are enabled."
+  },
+  {
+    "id": "southwest",
+    "name": "Southwest Airlines",
+    "category": "Airline",
+    "url": "https://www.southwest.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 10,
+      "agent_checkout": 3,
+      "structured_paths": 3,
+      "email": 5,
+      "sms": 7,
+      "live_chat": 8,
+      "book_online": 10
+    },
+    "total": 46,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13: home HTTP 200 (7550 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 0",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "robots.txt (saved copy)",
+        "url": "data/raw/robots_southwest.txt"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.southwest.com/robots.txt"
+      }
+    ],
+    "notes": "Home returned 200 but only 7,550 bytes, which looks like a shell or interstitial rather than the full site. robots.txt allows crawlers except /v2/. No public booking API or agent checkout path known."
+  },
+  {
+    "id": "united",
+    "name": "United Airlines",
+    "category": "Airline",
+    "url": "https://www.united.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 4,
+      "agent_checkout": 3,
+      "structured_paths": 3,
+      "email": 5,
+      "sms": 7,
+      "live_chat": 8,
+      "book_online": 10
+    },
+    "total": 40,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13: home HTTP 000 (7550 bytes), robots HTTP 000, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 0",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.united.com/robots.txt"
+      }
+    ],
+    "notes": "Request timed out (HTTP 000); robots.txt was not retrieved. The saved robots_united.txt is byte-identical to Southwest's and was NOT used as evidence. Bot access is scored low pending a re-run."
+  },
+  {
+    "id": "expedia",
+    "name": "Expedia",
+    "category": "Travel",
+    "url": "https://www.expedia.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 8,
+      "agent_checkout": 8,
+      "structured_paths": 12,
+      "email": 6,
+      "sms": 3,
+      "live_chat": 8,
+      "book_online": 9
+    },
+    "total": 54,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13: home HTTP 429 (25067 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 0",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "robots.txt (saved copy)",
+        "url": "data/raw/robots_expedia.txt"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.expedia.com/robots.txt"
+      },
+      {
+        "label": "Expedia Group developer hub",
+        "url": "https://developers.expediagroup.com/"
+      }
+    ],
+    "notes": "Bot UA was rate limited (HTTP 429). robots.txt explicitly allows OAI-SearchBot, ChatGPT-User, Claude-User, Claude-SearchBot, so intent is agent-friendly."
+  },
+  {
+    "id": "airbnb",
+    "name": "Airbnb",
+    "category": "Travel",
+    "url": "https://www.airbnb.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 8,
+      "agent_checkout": 3,
+      "structured_paths": 3,
+      "email": 7,
+      "sms": 2,
+      "live_chat": 8,
+      "book_online": 10
+    },
+    "total": 41,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13: home HTTP 200 (684737 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 2, AI-agent mentions 1",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "robots.txt (saved copy)",
+        "url": "data/raw/robots_airbnb.txt"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.airbnb.com/robots.txt"
+      }
+    ],
+    "notes": "Home reachable, but robots.txt fully disallows GPTBot and ClaudeBot (2 matches). No public booking API."
+  },
+  {
+    "id": "hyatt",
+    "name": "Hyatt",
+    "category": "Hotel",
+    "url": "https://www.hyatt.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 3,
+      "agent_checkout": 3,
+      "structured_paths": 3,
+      "email": 6,
+      "sms": 8,
+      "live_chat": 9,
+      "book_online": 9
+    },
+    "total": 41,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13: home HTTP 403 (12858 bytes), robots HTTP 403, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 0",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.hyatt.com/robots.txt"
+      }
+    ],
+    "notes": "HTTP 403 on both home and robots.txt; the saved robots_hyatt.txt is an HTML error page, not a robots file. Chat and text concierge credit comes from public knowledge of Hyatt Messaging, not from the crawl."
+  },
+  {
+    "id": "opentable",
+    "name": "OpenTable",
+    "category": "Reservations",
+    "url": "https://www.opentable.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 17,
+      "agent_checkout": 10,
+      "structured_paths": 8,
+      "email": 6,
+      "sms": 3,
+      "live_chat": 4,
+      "book_online": 10
+    },
+    "total": 58,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13: home HTTP 200 (542201 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 2",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "robots.txt (saved copy)",
+        "url": "data/raw/robots_opentable.txt"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.opentable.com/robots.txt"
+      }
+    ],
+    "notes": "Home reachable, large robots.txt with per-bot groups (including AI search bots) that block admin/internal paths and also booking paths. Online booking is the core product; agent-booking partnerships credited conservatively."
+  },
+  {
+    "id": "resy",
+    "name": "Resy",
+    "category": "Reservations",
+    "url": "https://resy.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 12,
+      "agent_checkout": 4,
+      "structured_paths": 3,
+      "email": 6,
+      "sms": 2,
+      "live_chat": 3,
+      "book_online": 10
+    },
+    "total": 40,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13: home HTTP 200 (5255 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 1",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://resy.com/robots.txt"
+      }
+    ],
+    "notes": "Home returned 200 but only 5,255 bytes (JS app shell). The saved robots_resy.txt is the same HTML shell, so no real robots.txt was found. No public API."
+  },
+  {
+    "id": "doordash",
+    "name": "DoorDash",
+    "category": "Delivery",
+    "url": "https://www.doordash.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 5,
+      "agent_checkout": 8,
+      "structured_paths": 8,
+      "email": 5,
+      "sms": 4,
+      "live_chat": 9,
+      "book_online": 10
+    },
+    "total": 49,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13: home HTTP 403 (5481 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 0",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "robots.txt (saved copy)",
+        "url": "data/raw/robots_doordash.txt"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.doordash.com/robots.txt"
+      },
+      {
+        "label": "DoorDash developer docs",
+        "url": "https://developer.doordash.com/"
+      }
+    ],
+    "notes": "Bot UA received HTTP 403 on home; robots.txt reachable and does not name AI crawlers but disallows /consumer/ and /orders/."
+  },
+  {
+    "id": "greatclips",
+    "name": "Great Clips",
+    "category": "Local services",
+    "url": "https://www.greatclips.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 18,
+      "agent_checkout": 4,
+      "structured_paths": 2,
+      "email": 4,
+      "sms": 5,
+      "live_chat": 2,
+      "book_online": 8
+    },
+    "total": 43,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13: home HTTP 200 (97494 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 0",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "robots.txt (saved copy)",
+        "url": "data/raw/robots_greatclips.txt"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.greatclips.com/robots.txt"
+      }
+    ],
+    "notes": "Home and robots.txt reachable; no AI blocks. Online check-in exists; text notifications for waitlist. No public API or agent path."
+  },
+  {
+    "id": "aspendental",
+    "name": "Aspen Dental",
+    "category": "Local services",
+    "url": "https://www.aspendental.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 18,
+      "agent_checkout": 4,
+      "structured_paths": 2,
+      "email": 5,
+      "sms": 2,
+      "live_chat": 4,
+      "book_online": 8
+    },
+    "total": 43,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13: home HTTP 200 (3698506 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 1",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "robots.txt (saved copy)",
+        "url": "data/raw/robots_aspendental.txt"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.aspendental.com/robots.txt"
+      }
+    ],
+    "notes": "Fully open robots.txt (Allow: /). Online appointment scheduling is available; no API or agent path known."
+  },
+  {
+    "id": "instacart",
+    "name": "Instacart",
+    "category": "Delivery",
+    "url": "https://www.instacart.com",
+    "date": "2026-10-13",
+    "status": "preliminary",
+    "subscores": {
+      "bot_access": 15,
+      "agent_checkout": 15,
+      "structured_paths": 13,
+      "email": 7,
+      "sms": 5,
+      "live_chat": 9,
+      "book_online": 10
+    },
+    "total": 74,
+    "evidence": [
+      {
+        "label": "Crawl 2026-10-13: home HTTP 200 (595833 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0, AI-agent mentions 0",
+        "url": "data/evidence.csv"
+      },
+      {
+        "label": "robots.txt (saved copy)",
+        "url": "data/raw/robots_instacart.txt"
+      },
+      {
+        "label": "Live robots.txt",
+        "url": "https://www.instacart.com/robots.txt"
+      },
+      {
+        "label": "Instacart Developer Platform",
+        "url": "https://docs.instacart.com/developer_platform_api/"
+      }
+    ],
+    "notes": "Home reachable. robots.txt allows OAI-SearchBot and ChatGPT-User with path limits, blocks PerplexityBot/Perplexity-User. Public ChatGPT checkout app and developer API credited."
+  }
+]
