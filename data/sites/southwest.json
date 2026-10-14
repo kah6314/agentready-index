@@ -1,0 +1,50 @@
+{
+ "id": "southwest",
+ "name": "Southwest Airlines",
+ "category": "Airline",
+ "url": "https://www.southwest.com",
+ "date": "2026-10-13",
+ "status": "preliminary",
+ "subscores": {
+  "bot_access": 10,
+  "agent_checkout": 3,
+  "structured_paths": 3,
+  "email": 9,
+  "sms": 6,
+  "live_chat": 9,
+  "book_online": 10
+ },
+ "total": 50,
+ "evidence": [
+  {
+   "label": "Crawl 2026-10-13 (update run): home HTTP 200 (7550 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "url": "data/evidence.csv"
+  },
+  {
+   "label": "robots.txt (saved copy)",
+   "url": "data/raw/robots_southwest.txt"
+  },
+  {
+   "label": "Live robots.txt",
+   "url": "https://www.southwest.com/robots.txt"
+  },
+  {
+   "label": "email: yes - Contact Us page offers complaint/compliment web forms and email",
+   "url": "https://support.southwest.com/helpcenter/contact-us"
+  },
+  {
+   "label": "sms: partial - Text HELP to program short codes (e.g. 70139); no two-way support-by-text confirmed",
+   "url": "https://www.southwest.com/about-southwest/terms-and-conditions/text-message-terms/"
+  },
+  {
+   "label": "book online: yes - Booking on southwest.com and app",
+   "url": "https://www.southwest.com"
+  },
+  {
+   "label": "agent payments: partial - Oct 2026 ChatGPT plugin for flight discovery/shopping (with OpenAI/AWS); in-chat payment not stated, booking completes on southwest.com",
+   "url": "https://press.aboutamazon.com/aws/2026/10/southwest-airlines-launches-first-of-its-kind-u-s-airline-plugin-in-chatgpt"
+  }
+ ],
+ "notes": "Home returned 200 but only 7,550 bytes, which looks like a shell or interstitial rather than the full site. robots.txt allows crawlers except /v2/. No public booking API or agent checkout path known. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.",
+ "rank": 12
+}

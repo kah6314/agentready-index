@@ -1,0 +1,46 @@
+{
+ "id": "greatclips",
+ "name": "Great Clips",
+ "category": "Local services",
+ "url": "https://www.greatclips.com",
+ "date": "2026-10-13",
+ "status": "preliminary",
+ "subscores": {
+  "bot_access": 18,
+  "agent_checkout": 4,
+  "structured_paths": 2,
+  "email": 9,
+  "sms": 6,
+  "live_chat": 2,
+  "book_online": 10
+ },
+ "total": 51,
+ "evidence": [
+  {
+   "label": "Crawl 2026-10-13 (update run): home HTTP 200 (97494 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "url": "data/evidence.csv"
+  },
+  {
+   "label": "robots.txt (saved copy)",
+   "url": "data/raw/robots_greatclips.txt"
+  },
+  {
+   "label": "Live robots.txt",
+   "url": "https://www.greatclips.com/robots.txt"
+  },
+  {
+   "label": "email: yes - Customer service page has email address (obfuscated) and a contact form",
+   "url": "https://www.greatclips.com/customer-service"
+  },
+  {
+   "label": "sms: partial - Text alerts for online check-in (reply YES opt-in, wait-time and running-late texts); not a two-way support channel",
+   "url": "https://www.greatclips.com/sms-terms"
+  },
+  {
+   "label": "book online: yes - Online check-in via website/app up to 15 min before close",
+   "url": "https://www.greatclips.com/online-check-in"
+  }
+ ],
+ "notes": "Home and robots.txt reachable; no AI blocks. Online check-in exists; text notifications for waitlist. No public API or agent path. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.",
+ "rank": 9
+}

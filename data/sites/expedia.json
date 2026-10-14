@@ -1,0 +1,58 @@
+{
+ "id": "expedia",
+ "name": "Expedia",
+ "category": "Travel",
+ "url": "https://www.expedia.com",
+ "date": "2026-10-13",
+ "status": "preliminary",
+ "subscores": {
+  "bot_access": 8,
+  "agent_checkout": 8,
+  "structured_paths": 12,
+  "email": 6,
+  "sms": 6,
+  "live_chat": 9,
+  "book_online": 10
+ },
+ "total": 59,
+ "evidence": [
+  {
+   "label": "Crawl 2026-10-13 (update run): home HTTP 429 (25091 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "url": "data/evidence.csv"
+  },
+  {
+   "label": "robots.txt (saved copy)",
+   "url": "data/raw/robots_expedia.txt"
+  },
+  {
+   "label": "Live robots.txt",
+   "url": "https://www.expedia.com/robots.txt"
+  },
+  {
+   "label": "Expedia Group developer hub",
+   "url": "https://developers.expediagroup.com/"
+  },
+  {
+   "label": "email: partial - Postal address and Help Center; direct email not confirmed",
+   "url": "https://www.expedia.com/lp/b/getintouch"
+  },
+  {
+   "label": "book online: yes - Book flights, hotels, cars on expedia.com and app",
+   "url": "https://www.expedia.com"
+  },
+  {
+   "label": "api: partial - Rapid/Lodging Supply APIs for approved partners",
+   "url": "https://developers.expediagroup.com/docs/ai-solutions"
+  },
+  {
+   "label": "mcp: partial - B2B MCP server announced May 2026 (going live 'in coming months'); dev docs describe a Lodging Supply dev MCP; AI solutions page says exploration phase, access via account manager",
+   "url": "https://skift.com/2026/05/21/expedia-to-launch-agentic-ai-tools-for-b2b-partners/"
+  },
+  {
+   "label": "agent payments: partial - Launch partner app in ChatGPT (OpenAI announcement); in-chat checkout not confirmed",
+   "url": "https://openai.com/index/introducing-apps-in-chatgpt/"
+  }
+ ],
+ "notes": "Bot UA was rate limited (HTTP 429). robots.txt explicitly allows OAI-SearchBot, ChatGPT-User, Claude-User, Claude-SearchBot, so intent is agent-friendly. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.",
+ "rank": 6
+}

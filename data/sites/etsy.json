@@ -1,0 +1,58 @@
+{
+ "id": "etsy",
+ "name": "Etsy",
+ "category": "Marketplace",
+ "url": "https://www.etsy.com",
+ "date": "2026-10-13",
+ "status": "preliminary",
+ "subscores": {
+  "bot_access": 6,
+  "agent_checkout": 13,
+  "structured_paths": 13,
+  "email": 6,
+  "sms": 2,
+  "live_chat": 6,
+  "book_online": 10
+ },
+ "total": 56,
+ "evidence": [
+  {
+   "label": "Crawl 2026-10-13 (update run): home HTTP 403 (776 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "url": "data/evidence.csv"
+  },
+  {
+   "label": "robots.txt (saved copy)",
+   "url": "data/raw/robots_etsy.txt"
+  },
+  {
+   "label": "Live robots.txt",
+   "url": "https://www.etsy.com/robots.txt"
+  },
+  {
+   "label": "Etsy Open API v3",
+   "url": "https://developers.etsy.com/"
+  },
+  {
+   "label": "email: partial - Contact Etsy Support web form; no public support email",
+   "url": "https://help.etsy.com/hc/en-us/articles/115013375488-How-to-Contact-Etsy-Support"
+  },
+  {
+   "label": "book online: yes - Full online ordering",
+   "url": "https://www.etsy.com"
+  },
+  {
+   "label": "api: yes - Etsy Open API v3; seller/personal/commercial app tiers",
+   "url": "https://developers.etsy.com/documentation/"
+  },
+  {
+   "label": "mcp: yes - Official Dev MCP server (API spec knowledge for developers, not live shop actions)",
+   "url": "https://developers.etsy.com/documentation/mcp_server/devmcpserver/"
+  },
+  {
+   "label": "agent payments: yes - Instant Checkout in ChatGPT (ACP, first partner Sept 2025), Gemini/AI Mode via UCP, Copilot; OpenAI scaled back Instant Checkout Mar 2026",
+   "url": "https://help.etsy.com/hc/en-us/articles/34208252828695-Purchasing-Etsy-Items-Through-ChatGPT"
+  }
+ ],
+ "notes": "Bot UA received HTTP 403 on the home page (776 bytes); robots.txt restricts some crawler paths. Agent checkout credit is for the announced ChatGPT partnership (conservative). Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.",
+ "rank": 7
+}

@@ -1,0 +1,54 @@
+{
+ "id": "ebay",
+ "name": "eBay",
+ "category": "Marketplace",
+ "url": "https://www.ebay.com",
+ "date": "2026-10-13",
+ "status": "preliminary",
+ "subscores": {
+  "bot_access": 3,
+  "agent_checkout": 5,
+  "structured_paths": 14,
+  "email": 2,
+  "sms": 3,
+  "live_chat": 9,
+  "book_online": 10
+ },
+ "total": 46,
+ "evidence": [
+  {
+   "label": "Crawl 2026-10-13 (update run): home HTTP 403 (1832 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 2",
+   "url": "data/evidence.csv"
+  },
+  {
+   "label": "robots.txt (saved copy)",
+   "url": "data/raw/robots_ebay.txt"
+  },
+  {
+   "label": "Live robots.txt",
+   "url": "https://www.ebay.com/robots.txt"
+  },
+  {
+   "label": "eBay developer program",
+   "url": "https://developer.ebay.com/"
+  },
+  {
+   "label": "email: no - No general support email; Help & Contact chat/callback (email only in some cases)",
+   "url": "https://pages.ebay.com/ca/help/account/contact-customer-support.html"
+  },
+  {
+   "label": "book online: yes - Full online buying",
+   "url": "https://www.ebay.com"
+  },
+  {
+   "label": "api: yes - developer.ebay.com public APIs (Browse, Sell etc.) with developer account; portal page blocked, confirmed via search",
+   "url": "https://developer.ebay.com/develop/api/sell/notification_events"
+  },
+  {
+   "label": "mcp: no - Only unofficial third-party MCP servers found",
+   "url": "https://developer.ebay.com"
+  }
+ ],
+ "notes": "Bot UA received HTTP 403. robots.txt disallows GPTBot, ClaudeBot, anthropic-ai and others, with some exceptions to the disallow. Strong public APIs (Browse, Buy) lift the structured score. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.",
+ "rank": 16
+}

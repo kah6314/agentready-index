@@ -1,0 +1,50 @@
+{
+ "id": "booking",
+ "name": "Booking.com",
+ "category": "Travel",
+ "url": "https://www.booking.com",
+ "date": "2026-10-13",
+ "status": "preliminary",
+ "subscores": {
+  "bot_access": 6,
+  "agent_checkout": 7,
+  "structured_paths": 12,
+  "email": 6,
+  "sms": 3,
+  "live_chat": 9,
+  "book_online": 10
+ },
+ "total": 53,
+ "evidence": [
+  {
+   "label": "Crawl 2026-10-13 (update run): home HTTP 202 (3962 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "url": "data/evidence.csv"
+  },
+  {
+   "label": "robots.txt (saved copy)",
+   "url": "data/raw/robots_booking.txt"
+  },
+  {
+   "label": "Live robots.txt",
+   "url": "https://www.booking.com/robots.txt"
+  },
+  {
+   "label": "email: partial - Help Center messaging with agents; direct email not confirmed",
+   "url": "https://www.booking.com/customer-service.html"
+  },
+  {
+   "label": "book online: yes - Book on booking.com and app",
+   "url": "https://www.booking.com"
+  },
+  {
+   "label": "api: partial - Demand API for approved affiliate partners",
+   "url": "https://developers.booking.com/mcp-server/docs/get-started"
+  },
+  {
+   "label": "agent payments: partial - Launch partner app in ChatGPT; transactions complete on Booking.com; no AP2/UCP/Visa confirmed",
+   "url": "https://openai.com/index/introducing-apps-in-chatgpt/"
+  }
+ ],
+ "notes": "Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.",
+ "rank": 8
+}

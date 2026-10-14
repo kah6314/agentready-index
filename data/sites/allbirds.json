@@ -1,0 +1,46 @@
+{
+ "id": "allbirds",
+ "name": "Allbirds",
+ "category": "Retail (Shopify)",
+ "url": "https://www.allbirds.com",
+ "date": "2026-10-13",
+ "status": "preliminary",
+ "subscores": {
+  "bot_access": 19,
+  "agent_checkout": 15,
+  "structured_paths": 15,
+  "email": 9,
+  "sms": 9,
+  "live_chat": 9,
+  "book_online": 10
+ },
+ "total": 86,
+ "evidence": [
+  {
+   "label": "Crawl 2026-10-13 (update run): home HTTP 200 (714452 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "url": "data/evidence.csv"
+  },
+  {
+   "label": "robots.txt (saved copy)",
+   "url": "data/raw/robots_allbirds.txt"
+  },
+  {
+   "label": "Live robots.txt",
+   "url": "https://www.allbirds.com/robots.txt"
+  },
+  {
+   "label": "Shopify agentic commerce docs",
+   "url": "https://shopify.dev/docs/agents"
+  },
+  {
+   "label": "Shopify UCP agentic checkout",
+   "url": "https://shopify.dev/docs/apps/build/storefront-mcp"
+  },
+  {
+   "label": "email: yes - help@allbirds.com listed for orders, returns, account",
+   "url": "https://www.allbirds.com/pages/contact-us"
+  }
+ ],
+ "notes": "Shopify storefront: home and robots reachable; robots.txt restricts some crawler paths. Shopify merchants get Shopify UCP agentic checkout by platform default (https://shopify.dev/docs/apps/build/storefront-mcp); score assumes the platform defaults are enabled. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.",
+ "rank": 1
+}

@@ -1,0 +1,46 @@
+{
+ "id": "homedepot",
+ "name": "The Home Depot",
+ "category": "Retail",
+ "url": "https://www.homedepot.com",
+ "date": "2026-10-13",
+ "status": "preliminary",
+ "subscores": {
+  "bot_access": 5,
+  "agent_checkout": 5,
+  "structured_paths": 4,
+  "email": 6,
+  "sms": 9,
+  "live_chat": 9,
+  "book_online": 10
+ },
+ "total": 48,
+ "evidence": [
+  {
+   "label": "Crawl 2026-10-13 (update run): home HTTP 403 (371 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "url": "data/evidence.csv"
+  },
+  {
+   "label": "robots.txt (saved copy)",
+   "url": "data/raw/robots_homedepot.txt"
+  },
+  {
+   "label": "Live robots.txt",
+   "url": "https://www.homedepot.com/robots.txt"
+  },
+  {
+   "label": "email: partial - Contact Us web form on site; no direct email address",
+   "url": "https://www.homedepot.com/c/Customer_Support_Answers"
+  },
+  {
+   "label": "book online: yes - Online ordering and services booking",
+   "url": "https://www.homedepot.com"
+  },
+  {
+   "label": "api: no - No public developer API found",
+   "url": "https://corporate.homedepot.com"
+  }
+ ],
+ "notes": "Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.",
+ "rank": 15
+}

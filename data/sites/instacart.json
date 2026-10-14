@@ -1,0 +1,58 @@
+{
+ "id": "instacart",
+ "name": "Instacart",
+ "category": "Delivery",
+ "url": "https://www.instacart.com",
+ "date": "2026-10-13",
+ "status": "preliminary",
+ "subscores": {
+  "bot_access": 15,
+  "agent_checkout": 15,
+  "structured_paths": 14,
+  "email": 7,
+  "sms": 6,
+  "live_chat": 9,
+  "book_online": 10
+ },
+ "total": 76,
+ "evidence": [
+  {
+   "label": "Crawl 2026-10-13 (update run): home HTTP 200 (601313 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "url": "data/evidence.csv"
+  },
+  {
+   "label": "robots.txt (saved copy)",
+   "url": "data/raw/robots_instacart.txt"
+  },
+  {
+   "label": "Live robots.txt",
+   "url": "https://www.instacart.com/robots.txt"
+  },
+  {
+   "label": "Instacart Developer Platform",
+   "url": "https://docs.instacart.com/developer_platform_api/"
+  },
+  {
+   "label": "sms: partial - SMS threads with shopper during active orders; no standalone support text line",
+   "url": "https://docs.instacart.com/connect/post-checkout_guide/concepts/chat/"
+  },
+  {
+   "label": "live chat: yes - Help center live chat/virtual assistant, plus shopper chat",
+   "url": "https://www.instacart.com/help/section/809794019/1992925010"
+  },
+  {
+   "label": "book online: yes - App/web ordering",
+   "url": "https://www.instacart.com"
+  },
+  {
+   "label": "mcp: yes - Official MCP server docs (consumer OAuth server; Developer Platform MCP with API key)",
+   "url": "https://docs.instacart.com/mcp_servers/"
+  },
+  {
+   "label": "agent payments: yes - ChatGPT app with Instant Checkout via Agentic Commerce Protocol/Stripe, launched Dec 8 2025 (trade press; official post URL returned 404)",
+   "url": "https://company.instacart.com/updates"
+  }
+ ],
+ "notes": "Home reachable. robots.txt allows OAI-SearchBot and ChatGPT-User with path limits, blocks PerplexityBot/Perplexity-User. Public ChatGPT checkout app and developer API credited. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.",
+ "rank": 2
+}

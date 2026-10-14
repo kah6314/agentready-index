@@ -1,0 +1,42 @@
+{
+ "id": "hyatt",
+ "name": "Hyatt",
+ "category": "Hotel",
+ "url": "https://www.hyatt.com",
+ "date": "2026-10-13",
+ "status": "preliminary",
+ "subscores": {
+  "bot_access": 3,
+  "agent_checkout": 3,
+  "structured_paths": 3,
+  "email": 9,
+  "sms": 6,
+  "live_chat": 9,
+  "book_online": 10
+ },
+ "total": 43,
+ "evidence": [
+  {
+   "label": "Crawl 2026-10-13 (update run): home HTTP 403 (12858 bytes), robots HTTP 403 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
+   "url": "data/evidence.csv"
+  },
+  {
+   "label": "Live robots.txt",
+   "url": "https://www.hyatt.com/robots.txt"
+  },
+  {
+   "label": "email: yes - Customer service email consumeraffairs@hyatt.com and feedback form",
+   "url": "https://www.hyatt.com/help/en-US/contact/contact-us"
+  },
+  {
+   "label": "sms: partial - Text service for US stay guests; reply HELP/STOP",
+   "url": "https://www.hyatt.com/help/terms/sms"
+  },
+  {
+   "label": "book online: yes - Book on hyatt.com and app",
+   "url": "https://www.hyatt.com"
+  }
+ ],
+ "notes": "HTTP 403 on both home and robots.txt; the saved robots_hyatt.txt is an HTML error page, not a robots file. Chat and text concierge credit comes from public knowledge of Hyatt Messaging, not from the crawl. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Retried robots.txt: still no valid robots file (Hyatt 403 error page, Resy serves its HTML app shell).",
+ "rank": 19
+}

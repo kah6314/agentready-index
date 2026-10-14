@@ -1,0 +1,42 @@
+{
+ "id": "resy",
+ "name": "Resy",
+ "category": "Reservations",
+ "url": "https://resy.com",
+ "date": "2026-10-13",
+ "status": "preliminary",
+ "subscores": {
+  "bot_access": 12,
+  "agent_checkout": 4,
+  "structured_paths": 3,
+  "email": 9,
+  "sms": 2,
+  "live_chat": 6,
+  "book_online": 10
+ },
+ "total": 46,
+ "evidence": [
+  {
+   "label": "Crawl 2026-10-13 (update run): home HTTP 200 (5255 bytes), robots HTTP 200 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
+   "url": "data/evidence.csv"
+  },
+  {
+   "label": "Live robots.txt",
+   "url": "https://resy.com/robots.txt"
+  },
+  {
+   "label": "email: yes - help@resy.com for diners (official helpdesk, via search result)",
+   "url": "https://helpdesk.resy.com/en/articles/2780879-how-to-contact-resy-support"
+  },
+  {
+   "label": "book online: yes - Online/app reservations",
+   "url": "https://resy.com"
+  },
+  {
+   "label": "api: partial - Partner-only; no public developer portal (secondary sources)",
+   "url": "https://resy.com/about"
+  }
+ ],
+ "notes": "Home returned 200 but only 5,255 bytes (JS app shell). The saved robots_resy.txt is the same HTML shell, so no real robots.txt was found. No public API. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Retried robots.txt: still no valid robots file (Hyatt 403 error page, Resy serves its HTML app shell).",
+ "rank": 17
+}

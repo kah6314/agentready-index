@@ -1,0 +1,54 @@
+{
+ "id": "walmart",
+ "name": "Walmart",
+ "category": "Retail",
+ "url": "https://www.walmart.com",
+ "date": "2026-10-13",
+ "status": "preliminary",
+ "subscores": {
+  "bot_access": 18,
+  "agent_checkout": 14,
+  "structured_paths": 10,
+  "email": 6,
+  "sms": 6,
+  "live_chat": 9,
+  "book_online": 10
+ },
+ "total": 73,
+ "evidence": [
+  {
+   "label": "Crawl 2026-10-13 (update run): home HTTP 200 (374779 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "url": "data/evidence.csv"
+  },
+  {
+   "label": "robots.txt (saved copy)",
+   "url": "data/raw/robots_walmart.txt"
+  },
+  {
+   "label": "Live robots.txt",
+   "url": "https://www.walmart.com/robots.txt"
+  },
+  {
+   "label": "Walmart developer portal",
+   "url": "https://developer.walmart.com/"
+  },
+  {
+   "label": "sms: partial - Customer Care messaging program with HELP/STOP short codes; mostly alerts, not full text support",
+   "url": "https://www.walmart.com/help/article/mobile-alerts-terms-of-use/499122d9bba94d08b50e8facf42fcc82"
+  },
+  {
+   "label": "live chat: yes - Help Center online chat and automated assistant; chat with shopper on delivery orders",
+   "url": "https://corporate.walmart.com/about/contact"
+  },
+  {
+   "label": "book online: yes - Full online ordering, pickup and delivery",
+   "url": "https://www.walmart.com"
+  },
+  {
+   "label": "agent payments: yes - Gemini shopping via UCP (Jan 2026); ChatGPT app with account linking after Instant Checkout was scaled back; Sparky assistant",
+   "url": "https://corporate.walmart.com/news/2026/01/11/walmart-and-google-turn-ai-discovery-into-effortless-shopping-experiences"
+  }
+ ],
+ "notes": "Home page and robots.txt reachable; no AI crawler full blocks. Public ChatGPT checkout partnership credited conservatively; channel scores are estimates from public help pages. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.",
+ "rank": 3
+}

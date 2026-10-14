@@ -1,0 +1,42 @@
+{
+ "id": "chipotle",
+ "name": "Chipotle",
+ "category": "Restaurant ordering",
+ "url": "https://www.chipotle.com",
+ "date": "2026-10-13",
+ "status": "preliminary",
+ "subscores": {
+  "bot_access": 18,
+  "agent_checkout": 4,
+  "structured_paths": 2,
+  "email": 6,
+  "sms": 3,
+  "live_chat": 6,
+  "book_online": 10
+ },
+ "total": 49,
+ "evidence": [
+  {
+   "label": "Crawl 2026-10-13 (update run): home HTTP 200 (69329 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "url": "data/evidence.csv"
+  },
+  {
+   "label": "robots.txt (saved copy)",
+   "url": "data/raw/robots_chipotle.txt"
+  },
+  {
+   "label": "Live robots.txt",
+   "url": "https://www.chipotle.com/robots.txt"
+  },
+  {
+   "label": "email: partial - Contact-us web form (content not readable); no email address verified",
+   "url": "https://www.chipotle.com/contact-us"
+  },
+  {
+   "label": "book online: yes - Online/app ordering",
+   "url": "https://www.chipotle.com"
+  }
+ ],
+ "notes": "Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.",
+ "rank": 14
+}

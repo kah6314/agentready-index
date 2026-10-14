@@ -1,0 +1,54 @@
+{
+ "id": "target",
+ "name": "Target",
+ "category": "Retail",
+ "url": "https://www.target.com",
+ "date": "2026-10-13",
+ "status": "preliminary",
+ "subscores": {
+  "bot_access": 18,
+  "agent_checkout": 11,
+  "structured_paths": 6,
+  "email": 6,
+  "sms": 6,
+  "live_chat": 9,
+  "book_online": 10
+ },
+ "total": 66,
+ "evidence": [
+  {
+   "label": "Crawl 2026-10-13 (update run): home HTTP 200 (409745 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "url": "data/evidence.csv"
+  },
+  {
+   "label": "robots.txt (saved copy)",
+   "url": "data/raw/robots_target.txt"
+  },
+  {
+   "label": "Live robots.txt",
+   "url": "https://www.target.com/robots.txt"
+  },
+  {
+   "label": "email: partial - Web contact form flow at contactus.target.com; no public email address",
+   "url": "https://contactus.target.com/ContactUs/PreChatOrderExperience"
+  },
+  {
+   "label": "live chat: yes - Target Chat on Target.com and app; availability varies",
+   "url": "https://help.target.com/help/TargetGuestHelpArticleDetail?articleId=ka95d000000ws8UAAQ&articleTitle=How+do+I+use+Target+Chat%3F"
+  },
+  {
+   "label": "book online: yes - Full online ordering, Drive Up, pickup",
+   "url": "https://www.target.com"
+  },
+  {
+   "label": "api: no - No public developer API found (partner-only)",
+   "url": "https://corporate.target.com"
+  },
+  {
+   "label": "agent payments: yes - Checkout in Gemini/AI Mode via UCP, Copilot Checkout, Target app in ChatGPT",
+   "url": "https://corporate.target.com/press/fact-sheet/2026/01/google-gemini-2026"
+  }
+ ],
+ "notes": "Home page and robots.txt reachable; no AI crawler blocks. Agent checkout score reflects a ChatGPT app presence only; no public developer API. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.",
+ "rank": 4
+}

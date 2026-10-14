@@ -1,0 +1,50 @@
+{
+ "id": "amazon",
+ "name": "Amazon",
+ "category": "Marketplace",
+ "url": "https://www.amazon.com",
+ "date": "2026-10-13",
+ "status": "preliminary",
+ "subscores": {
+  "bot_access": 2,
+  "agent_checkout": 6,
+  "structured_paths": 8,
+  "email": 6,
+  "sms": 4,
+  "live_chat": 9,
+  "book_online": 10
+ },
+ "total": 45,
+ "evidence": [
+  {
+   "label": "Crawl 2026-10-13 (update run): home HTTP 200 (2167 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 3",
+   "url": "data/evidence.csv"
+  },
+  {
+   "label": "robots.txt (saved copy)",
+   "url": "data/raw/robots_amazon.txt"
+  },
+  {
+   "label": "Live robots.txt",
+   "url": "https://www.amazon.com/robots.txt"
+  },
+  {
+   "label": "Selling Partner API docs",
+   "url": "https://developer-docs.amazon.com/sp-api/"
+  },
+  {
+   "label": "email: partial - Amazon help says support via phone, chat, email and self-service; no direct address, in-account contact flow",
+   "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GSD587LKW72HKU2V"
+  },
+  {
+   "label": "book online: yes - Full online ordering",
+   "url": "https://www.amazon.com"
+  },
+  {
+   "label": "agent payments: partial - Own agents (Buy for Me, Alexa for Shopping); no support found for third-party agent protocols such as ACP/UCP",
+   "url": "https://www.aboutamazon.com/news/retail/alexa-for-shopping-ai-assistant"
+  }
+ ],
+ "notes": "Bot UA gets HTTP 202 with an empty body (bot challenge). robots.txt has full Disallow for GPTBot and ClaudeBot (4 groups matched). No third-party agent checkout path we are confident of. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.",
+ "rank": 18
+}
