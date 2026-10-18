@@ -1,6 +1,6 @@
 # AgentReady Index
 
-> Preliminary 0-100 scores for how well 21 online stores and platforms let AI agents shop, book and get service. Built by Kevin Harmon. Last updated 2026-10-14. Open data, CC BY 4.0. Agents and crawlers are welcome.
+> Preliminary 0-100 scores for how well 21 online stores and platforms let AI agents shop, book and get service. Built by Kevin Harmon. Last updated 2026-10-18. Open data, CC BY 4.0. Agents and crawlers are welcome.
 
 ## Data
 - [sites.json](https://kah6314.github.io/agentready-index/data/sites.json): all stores; fields id, name, category, url, date, status, subscores (bot_access/20, agent_checkout/20, structured_paths/20, email/10, sms/10, live_chat/10, book_online/10), total/100, evidence[], notes
@@ -43,11 +43,11 @@ Scores 0-100: bot_access/20 (bot-UA crawl: home status, robots.txt, GPTBot/Claud
 
 ## Allbirds - 86/100 (rank #1 of 21, Retail (Shopify))
 URL: https://kah6314.github.io/agentready-index/stores/allbirds.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 19/20, Agent checkout 15/20, Structured/API/MCP 15/20, Email 9/10, Text/SMS 9/10, Live chat 9/10, Book online/text 10/10
-Summary: Shopify storefront: home and robots reachable; robots.txt restricts some crawler paths. Shopify merchants get Shopify UCP agentic checkout by platform default (https://shopify.dev/docs/apps/build/storefront-mcp); score assumes the platform defaults are enabled. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.
+Summary: Shopify storefront: home and robots reachable; robots.txt restricts some crawler paths. Shopify merchants get Shopify UCP agentic checkout by platform default (https://shopify.dev/docs/apps/build/storefront-mcp); score assumes the platform defaults are enabled. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Oct 18 crawl: home page returned HTTP 429 ("local_rate_limited") to the AgentReady bot UA and to a GPTBot UA, including a retry after the 60-second Retry-After window, while a browser UA got the full page; robots.txt unchanged. Bot access held pending a retest from a second network.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 200 (714452 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 429 (18 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
 - robots.txt (saved copy): https://kah6314.github.io/agentready-index/data/raw/robots_allbirds.txt
 - Live robots.txt: https://www.allbirds.com/robots.txt
 - Shopify agentic commerce docs: https://shopify.dev/docs/agents
@@ -56,11 +56,11 @@ Evidence:
 
 ## Instacart - 76/100 (rank #2 of 21, Delivery)
 URL: https://kah6314.github.io/agentready-index/stores/instacart.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 15/20, Agent checkout 15/20, Structured/API/MCP 14/20, Email 7/10, Text/SMS 6/10, Live chat 9/10, Book online/text 10/10
 Summary: Home reachable. robots.txt allows OAI-SearchBot and ChatGPT-User with path limits, blocks PerplexityBot/Perplexity-User. Public ChatGPT checkout app and developer API credited. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 200 (601313 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 200 (601354 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
 - robots.txt (saved copy): https://kah6314.github.io/agentready-index/data/raw/robots_instacart.txt
 - Live robots.txt: https://www.instacart.com/robots.txt
 - Instacart Developer Platform: https://docs.instacart.com/developer_platform_api/
@@ -72,11 +72,11 @@ Evidence:
 
 ## Walmart - 73/100 (rank #3 of 21, Retail)
 URL: https://kah6314.github.io/agentready-index/stores/walmart.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 18/20, Agent checkout 14/20, Structured/API/MCP 10/20, Email 6/10, Text/SMS 6/10, Live chat 9/10, Book online/text 10/10
 Summary: Home page and robots.txt reachable; no AI crawler full blocks. Public ChatGPT checkout partnership credited conservatively; channel scores are estimates from public help pages. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 200 (374779 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 200 (450113 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
 - robots.txt (saved copy): https://kah6314.github.io/agentready-index/data/raw/robots_walmart.txt
 - Live robots.txt: https://www.walmart.com/robots.txt
 - Walmart developer portal: https://developer.walmart.com/
@@ -87,11 +87,11 @@ Evidence:
 
 ## Target - 66/100 (rank #4 of 21, Retail)
 URL: https://kah6314.github.io/agentready-index/stores/target.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 18/20, Agent checkout 11/20, Structured/API/MCP 6/20, Email 6/10, Text/SMS 6/10, Live chat 9/10, Book online/text 10/10
 Summary: Home page and robots.txt reachable; no AI crawler blocks. Agent checkout score reflects a ChatGPT app presence only; no public developer API. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 200 (409745 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 200 (452003 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
 - robots.txt (saved copy): https://kah6314.github.io/agentready-index/data/raw/robots_target.txt
 - Live robots.txt: https://www.target.com/robots.txt
 - email: partial - Web contact form flow at contactus.target.com; no public email address: https://contactus.target.com/ContactUs/PreChatOrderExperience
@@ -102,11 +102,11 @@ Evidence:
 
 ## OpenTable - 66/100 (rank #5 of 21, Reservations)
 URL: https://kah6314.github.io/agentready-index/stores/opentable.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 17/20, Agent checkout 10/20, Structured/API/MCP 8/20, Email 9/10, Text/SMS 3/10, Live chat 9/10, Book online/text 10/10
 Summary: Home reachable, large robots.txt with per-bot groups (including AI search bots) that block admin/internal paths and also booking paths. Online booking is the core product; agent-booking partnerships credited conservatively. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 200 (542248 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 200 (542672 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
 - robots.txt (saved copy): https://kah6314.github.io/agentready-index/data/raw/robots_opentable.txt
 - Live robots.txt: https://www.opentable.com/robots.txt
 - email: yes - Diner help center contact-support page (web form); restaurants get email support. Page not loadable; per search snippets: https://help.opentable.com/s/contactsupport
@@ -114,11 +114,11 @@ Evidence:
 
 ## Expedia - 59/100 (rank #6 of 21, Travel)
 URL: https://kah6314.github.io/agentready-index/stores/expedia.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 8/20, Agent checkout 8/20, Structured/API/MCP 12/20, Email 6/10, Text/SMS 6/10, Live chat 9/10, Book online/text 10/10
 Summary: Bot UA was rate limited (HTTP 429). robots.txt explicitly allows OAI-SearchBot, ChatGPT-User, Claude-User, Claude-SearchBot, so intent is agent-friendly. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 429 (25091 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 429 (25103 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
 - robots.txt (saved copy): https://kah6314.github.io/agentready-index/data/raw/robots_expedia.txt
 - Live robots.txt: https://www.expedia.com/robots.txt
 - Expedia Group developer hub: https://developers.expediagroup.com/
@@ -130,11 +130,11 @@ Evidence:
 
 ## Etsy - 56/100 (rank #7 of 21, Marketplace)
 URL: https://kah6314.github.io/agentready-index/stores/etsy.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 6/20, Agent checkout 13/20, Structured/API/MCP 13/20, Email 6/10, Text/SMS 2/10, Live chat 6/10, Book online/text 10/10
 Summary: Bot UA received HTTP 403 on the home page (776 bytes); robots.txt restricts some crawler paths. Agent checkout credit is for the announced ChatGPT partnership (conservative). Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 403 (776 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 403 (776 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
 - robots.txt (saved copy): https://kah6314.github.io/agentready-index/data/raw/robots_etsy.txt
 - Live robots.txt: https://www.etsy.com/robots.txt
 - Etsy Open API v3: https://developers.etsy.com/
@@ -146,11 +146,11 @@ Evidence:
 
 ## Booking.com - 53/100 (rank #8 of 21, Travel)
 URL: https://kah6314.github.io/agentready-index/stores/booking.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 6/20, Agent checkout 7/20, Structured/API/MCP 12/20, Email 6/10, Text/SMS 3/10, Live chat 9/10, Book online/text 10/10
 Summary: Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 202 (3962 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 202 (3962 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
 - robots.txt (saved copy): https://kah6314.github.io/agentready-index/data/raw/robots_booking.txt
 - Live robots.txt: https://www.booking.com/robots.txt
 - email: partial - Help Center messaging with agents; direct email not confirmed: https://www.booking.com/customer-service.html
@@ -160,11 +160,11 @@ Evidence:
 
 ## Great Clips - 51/100 (rank #9 of 21, Local services)
 URL: https://kah6314.github.io/agentready-index/stores/greatclips.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 18/20, Agent checkout 4/20, Structured/API/MCP 2/20, Email 9/10, Text/SMS 6/10, Live chat 2/10, Book online/text 10/10
 Summary: Home and robots.txt reachable; no AI blocks. Online check-in exists; text notifications for waitlist. No public API or agent path. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 200 (97494 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 200 (97494 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
 - robots.txt (saved copy): https://kah6314.github.io/agentready-index/data/raw/robots_greatclips.txt
 - Live robots.txt: https://www.greatclips.com/robots.txt
 - email: yes - Customer service page has email address (obfuscated) and a contact form: https://www.greatclips.com/customer-service
@@ -173,22 +173,22 @@ Evidence:
 
 ## Aspen Dental - 51/100 (rank #10 of 21, Local services)
 URL: https://kah6314.github.io/agentready-index/stores/aspendental.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 18/20, Agent checkout 4/20, Structured/API/MCP 2/20, Email 9/10, Text/SMS 2/10, Live chat 6/10, Book online/text 10/10
 Summary: Fully open robots.txt (Allow: /). Online appointment scheduling is available; no API or agent path known. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 200 (3698457 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 200 (3718550 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
 - robots.txt (saved copy): https://kah6314.github.io/agentready-index/data/raw/robots_aspendental.txt
 - Live robots.txt: https://www.aspendental.com/robots.txt
 - email: yes - customerservice@aspendental.com: https://www.aspendental.com/about/contact-us/
 
 ## Best Buy - 50/100 (rank #11 of 21, Retail)
 URL: https://kah6314.github.io/agentready-index/stores/bestbuy.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 8/20, Agent checkout 4/20, Structured/API/MCP 11/20, Email 2/10, Text/SMS 6/10, Live chat 9/10, Book online/text 10/10
-Summary: Home reachable. robots.txt names AI agents (GPTBot, ClaudeBot, ChatGPT-User, etc.) but only allows /site/ and /discover-learn/ and blocks cart, fulfillment, pricing, so access is partial. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Home and robots.txt timed out from two networks in this run (earlier crawl today reached them); bot access lowered pending retest.
+Summary: Home reachable. robots.txt names AI agents (GPTBot, ClaudeBot, ChatGPT-User, etc.) but only allows /site/ and /discover-learn/ and blocks cart, fulfillment, pricing, so access is partial. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Home and robots.txt timed out from two networks in this run (earlier crawl today reached them); bot access lowered pending retest. Oct 18 crawl: home and robots.txt timed out again with bot and browser UAs; bot access stays lowered.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 000 (0 bytes), robots HTTP 000 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 000 (0 bytes), robots HTTP 000 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
 - robots.txt (saved copy, earlier crawl today): https://kah6314.github.io/agentready-index/data/raw/robots_bestbuy.txt
 - Live robots.txt: https://www.bestbuy.com/robots.txt
 - Best Buy Products API: https://developer.bestbuy.com/
@@ -197,11 +197,11 @@ Evidence:
 
 ## Southwest Airlines - 50/100 (rank #12 of 21, Airline)
 URL: https://kah6314.github.io/agentready-index/stores/southwest.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 10/20, Agent checkout 3/20, Structured/API/MCP 3/20, Email 9/10, Text/SMS 6/10, Live chat 9/10, Book online/text 10/10
 Summary: Home returned 200 but only 7,550 bytes, which looks like a shell or interstitial rather than the full site. robots.txt allows crawlers except /v2/. No public booking API or agent checkout path known. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 200 (7550 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 200 (7550 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
 - robots.txt (saved copy): https://kah6314.github.io/agentready-index/data/raw/robots_southwest.txt
 - Live robots.txt: https://www.southwest.com/robots.txt
 - email: yes - Contact Us page offers complaint/compliment web forms and email: https://support.southwest.com/helpcenter/contact-us
@@ -211,11 +211,11 @@ Evidence:
 
 ## DoorDash - 50/100 (rank #13 of 21, Delivery)
 URL: https://kah6314.github.io/agentready-index/stores/doordash.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 5/20, Agent checkout 8/20, Structured/API/MCP 8/20, Email 6/10, Text/SMS 4/10, Live chat 9/10, Book online/text 10/10
 Summary: Bot UA received HTTP 403 on home; robots.txt reachable and does not name AI crawlers but disallows /consumer/ and /orders/. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 403 (5587 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 403 (5587 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
 - robots.txt (saved copy): https://kah6314.github.io/agentready-index/data/raw/robots_doordash.txt
 - Live robots.txt: https://www.doordash.com/robots.txt
 - DoorDash developer docs: https://developer.doordash.com/
@@ -226,11 +226,11 @@ Evidence:
 
 ## Chipotle - 49/100 (rank #14 of 21, Restaurant ordering)
 URL: https://kah6314.github.io/agentready-index/stores/chipotle.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 18/20, Agent checkout 4/20, Structured/API/MCP 2/20, Email 6/10, Text/SMS 3/10, Live chat 6/10, Book online/text 10/10
 Summary: Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 200 (69329 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 200 (69329 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
 - robots.txt (saved copy): https://kah6314.github.io/agentready-index/data/raw/robots_chipotle.txt
 - Live robots.txt: https://www.chipotle.com/robots.txt
 - email: partial - Contact-us web form (content not readable); no email address verified: https://www.chipotle.com/contact-us
@@ -238,11 +238,11 @@ Evidence:
 
 ## The Home Depot - 48/100 (rank #15 of 21, Retail)
 URL: https://kah6314.github.io/agentready-index/stores/homedepot.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 5/20, Agent checkout 5/20, Structured/API/MCP 4/20, Email 6/10, Text/SMS 9/10, Live chat 9/10, Book online/text 10/10
 Summary: Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 403 (371 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 403 (371 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
 - robots.txt (saved copy): https://kah6314.github.io/agentready-index/data/raw/robots_homedepot.txt
 - Live robots.txt: https://www.homedepot.com/robots.txt
 - email: partial - Contact Us web form on site; no direct email address: https://www.homedepot.com/c/Customer_Support_Answers
@@ -251,11 +251,11 @@ Evidence:
 
 ## eBay - 46/100 (rank #16 of 21, Marketplace)
 URL: https://kah6314.github.io/agentready-index/stores/ebay.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 3/20, Agent checkout 5/20, Structured/API/MCP 14/20, Email 2/10, Text/SMS 3/10, Live chat 9/10, Book online/text 10/10
 Summary: Bot UA received HTTP 403. robots.txt disallows GPTBot, ClaudeBot, anthropic-ai and others, with some exceptions to the disallow. Strong public APIs (Browse, Buy) lift the structured score. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 403 (1832 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 2: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 403 (1832 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 2: https://kah6314.github.io/agentready-index/data/evidence.csv
 - robots.txt (saved copy): https://kah6314.github.io/agentready-index/data/raw/robots_ebay.txt
 - Live robots.txt: https://www.ebay.com/robots.txt
 - eBay developer program: https://developer.ebay.com/
@@ -266,11 +266,11 @@ Evidence:
 
 ## Resy - 46/100 (rank #17 of 21, Reservations)
 URL: https://kah6314.github.io/agentready-index/stores/resy.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 12/20, Agent checkout 4/20, Structured/API/MCP 3/20, Email 9/10, Text/SMS 2/10, Live chat 6/10, Book online/text 10/10
 Summary: Home returned 200 but only 5,255 bytes (JS app shell). The saved robots_resy.txt is the same HTML shell, so no real robots.txt was found. No public API. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Retried robots.txt: still no valid robots file (Hyatt 403 error page, Resy serves its HTML app shell).
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 200 (5255 bytes), robots HTTP 200 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 200 (5256 bytes), robots HTTP 200 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
 - Live robots.txt: https://resy.com/robots.txt
 - email: yes - help@resy.com for diners (official helpdesk, via search result): https://helpdesk.resy.com/en/articles/2780879-how-to-contact-resy-support
 - book online: yes - Online/app reservations: https://resy.com
@@ -278,11 +278,11 @@ Evidence:
 
 ## Amazon - 45/100 (rank #18 of 21, Marketplace)
 URL: https://kah6314.github.io/agentready-index/stores/amazon.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 2/20, Agent checkout 6/20, Structured/API/MCP 8/20, Email 6/10, Text/SMS 4/10, Live chat 9/10, Book online/text 10/10
 Summary: Bot UA gets HTTP 202 with an empty body (bot challenge). robots.txt has full Disallow for GPTBot and ClaudeBot (4 groups matched). No third-party agent checkout path we are confident of. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 200 (2167 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 3: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 202 (0 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 3: https://kah6314.github.io/agentready-index/data/evidence.csv
 - robots.txt (saved copy): https://kah6314.github.io/agentready-index/data/raw/robots_amazon.txt
 - Live robots.txt: https://www.amazon.com/robots.txt
 - Selling Partner API docs: https://developer-docs.amazon.com/sp-api/
@@ -292,11 +292,11 @@ Evidence:
 
 ## Hyatt - 43/100 (rank #19 of 21, Hotel)
 URL: https://kah6314.github.io/agentready-index/stores/hyatt.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 3/20, Agent checkout 3/20, Structured/API/MCP 3/20, Email 9/10, Text/SMS 6/10, Live chat 9/10, Book online/text 10/10
 Summary: HTTP 403 on both home and robots.txt; the saved robots_hyatt.txt is an HTML error page, not a robots file. Chat and text concierge credit comes from public knowledge of Hyatt Messaging, not from the crawl. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Retried robots.txt: still no valid robots file (Hyatt 403 error page, Resy serves its HTML app shell).
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 403 (12858 bytes), robots HTTP 403 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 403 (12858 bytes), robots HTTP 403 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
 - Live robots.txt: https://www.hyatt.com/robots.txt
 - email: yes - Customer service email consumeraffairs@hyatt.com and feedback form: https://www.hyatt.com/help/en-US/contact/contact-us
 - sms: partial - Text service for US stay guests; reply HELP/STOP: https://www.hyatt.com/help/terms/sms
@@ -304,22 +304,22 @@ Evidence:
 
 ## United Airlines - 39/100 (rank #20 of 21, Airline)
 URL: https://kah6314.github.io/agentready-index/stores/united.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 4/20, Agent checkout 3/20, Structured/API/MCP 3/20, Email 5/10, Text/SMS 6/10, Live chat 8/10, Book online/text 10/10
-Summary: Request timed out (HTTP 000); robots.txt was not retrieved. The saved robots_united.txt is byte-identical to Southwest's and was NOT used as evidence. Bot access is scored low pending a re-run. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Retried with bot and browser UAs plus a second network: still timeout / HTTP 500.
+Summary: Request timed out (HTTP 000); robots.txt was not retrieved. The saved robots_united.txt is byte-identical to Southwest's and was NOT used as evidence. Bot access is scored low pending a re-run. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Retried with bot and browser UAs plus a second network: still timeout / HTTP 500. Oct 18 crawl: still timing out with bot and browser UAs.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 000 (0 bytes), robots HTTP 000 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 000 (0 bytes), robots HTTP 000 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0: https://kah6314.github.io/agentready-index/data/evidence.csv
 - Live robots.txt: https://www.united.com/robots.txt
 - sms: partial - Text HELP to 71529/26266 for alert programs; mainly one-way alerts: https://cloud.enews.united.com/text-messaging-terms.html
 - book online: yes - Booking on united.com and app: https://www.united.com
 
 ## Airbnb - 37/100 (rank #21 of 21, Travel)
 URL: https://kah6314.github.io/agentready-index/stores/airbnb.html
-Scored: 2026-10-13 (preliminary)
+Scored: 2026-10-18 (preliminary)
 Subscores: Bot access 8/20, Agent checkout 3/20, Structured/API/MCP 3/20, Email 2/10, Text/SMS 2/10, Live chat 9/10, Book online/text 10/10
 Summary: Home reachable, but robots.txt fully disallows GPTBot and ClaudeBot (2 matches). No public booking API. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.
 Evidence:
-- Crawl 2026-10-13 (update run): home HTTP 200 (691223 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 2: https://kah6314.github.io/agentready-index/data/evidence.csv
+- Crawl 2026-10-18 (weekly update): home HTTP 200 (684966 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 2: https://kah6314.github.io/agentready-index/data/evidence.csv
 - robots.txt (saved copy): https://kah6314.github.io/agentready-index/data/raw/robots_airbnb.txt
 - Live robots.txt: https://www.airbnb.com/robots.txt
 - email: no - Official contact article lists chat/messaging and phone only: https://www.airbnb.com/help/article/1542

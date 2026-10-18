@@ -1,6 +1,6 @@
 # AgentReady Index
 
-> Preliminary 0-100 scores for how well 21 online stores and platforms let AI agents shop, book and get service. Built by Kevin Harmon. Last updated 2026-10-14. Open data, CC BY 4.0. Agents and crawlers are welcome.
+> Preliminary 0-100 scores for how well 21 online stores and platforms let AI agents shop, book and get service. Built by Kevin Harmon. Last updated 2026-10-18. Open data, CC BY 4.0. Agents and crawlers are welcome.
 
 ## Data
 - [sites.json](https://kah6314.github.io/agentready-index/data/sites.json): all stores; fields id, name, category, url, date, status, subscores (bot_access/20, agent_checkout/20, structured_paths/20, email/10, sms/10, live_chat/10, book_online/10), total/100, evidence[], notes
