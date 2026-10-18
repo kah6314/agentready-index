@@ -3,7 +3,7 @@
  "name": "Airbnb",
  "category": "Travel",
  "url": "https://www.airbnb.com",
- "date": "2026-10-13",
+ "date": "2026-10-18",
  "status": "preliminary",
  "subscores": {
   "bot_access": 8,
@@ -17,7 +17,7 @@
  "total": 37,
  "evidence": [
   {
-   "label": "Crawl 2026-10-13 (update run): home HTTP 200 (691223 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 2",
+   "label": "Crawl 2026-10-18 (weekly update): home HTTP 200 (684966 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 2",
    "url": "data/evidence.csv"
   },
   {

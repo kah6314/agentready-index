@@ -3,7 +3,7 @@
  "name": "Booking.com",
  "category": "Travel",
  "url": "https://www.booking.com",
- "date": "2026-10-13",
+ "date": "2026-10-18",
  "status": "preliminary",
  "subscores": {
   "bot_access": 6,
@@ -17,7 +17,7 @@
  "total": 53,
  "evidence": [
   {
-   "label": "Crawl 2026-10-13 (update run): home HTTP 202 (3962 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "label": "Crawl 2026-10-18 (weekly update): home HTTP 202 (3962 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
    "url": "data/evidence.csv"
   },
   {

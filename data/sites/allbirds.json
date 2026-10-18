@@ -3,7 +3,7 @@
  "name": "Allbirds",
  "category": "Retail (Shopify)",
  "url": "https://www.allbirds.com",
- "date": "2026-10-13",
+ "date": "2026-10-18",
  "status": "preliminary",
  "subscores": {
   "bot_access": 19,
@@ -17,7 +17,7 @@
  "total": 86,
  "evidence": [
   {
-   "label": "Crawl 2026-10-13 (update run): home HTTP 200 (714452 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "label": "Crawl 2026-10-18 (weekly update): home HTTP 429 (18 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
    "url": "data/evidence.csv"
   },
   {
@@ -41,6 +41,6 @@
    "url": "https://www.allbirds.com/pages/contact-us"
   }
  ],
- "notes": "Shopify storefront: home and robots reachable; robots.txt restricts some crawler paths. Shopify merchants get Shopify UCP agentic checkout by platform default (https://shopify.dev/docs/apps/build/storefront-mcp); score assumes the platform defaults are enabled. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.",
+ "notes": "Shopify storefront: home and robots reachable; robots.txt restricts some crawler paths. Shopify merchants get Shopify UCP agentic checkout by platform default (https://shopify.dev/docs/apps/build/storefront-mcp); score assumes the platform defaults are enabled. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Oct 18 crawl: home page returned HTTP 429 (\"local_rate_limited\") to the AgentReady bot UA and to a GPTBot UA, including a retry after the 60-second Retry-After window, while a browser UA got the full page; robots.txt unchanged. Bot access held pending a retest from a second network.",
  "rank": 1
 }

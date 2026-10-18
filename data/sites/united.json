@@ -3,7 +3,7 @@
  "name": "United Airlines",
  "category": "Airline",
  "url": "https://www.united.com",
- "date": "2026-10-13",
+ "date": "2026-10-18",
  "status": "preliminary",
  "subscores": {
   "bot_access": 4,
@@ -17,7 +17,7 @@
  "total": 39,
  "evidence": [
   {
-   "label": "Crawl 2026-10-13 (update run): home HTTP 000 (0 bytes), robots HTTP 000 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
+   "label": "Crawl 2026-10-18 (weekly update): home HTTP 000 (0 bytes), robots HTTP 000 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
    "url": "data/evidence.csv"
   },
   {
@@ -33,6 +33,6 @@
    "url": "https://www.united.com"
   }
  ],
- "notes": "Request timed out (HTTP 000); robots.txt was not retrieved. The saved robots_united.txt is byte-identical to Southwest's and was NOT used as evidence. Bot access is scored low pending a re-run. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Retried with bot and browser UAs plus a second network: still timeout / HTTP 500.",
+ "notes": "Request timed out (HTTP 000); robots.txt was not retrieved. The saved robots_united.txt is byte-identical to Southwest's and was NOT used as evidence. Bot access is scored low pending a re-run. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Retried with bot and browser UAs plus a second network: still timeout / HTTP 500. Oct 18 crawl: still timing out with bot and browser UAs.",
  "rank": 20
 }

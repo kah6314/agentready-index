@@ -3,7 +3,7 @@
  "name": "Instacart",
  "category": "Delivery",
  "url": "https://www.instacart.com",
- "date": "2026-10-13",
+ "date": "2026-10-18",
  "status": "preliminary",
  "subscores": {
   "bot_access": 15,
@@ -17,7 +17,7 @@
  "total": 76,
  "evidence": [
   {
-   "label": "Crawl 2026-10-13 (update run): home HTTP 200 (601313 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "label": "Crawl 2026-10-18 (weekly update): home HTTP 200 (601354 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
    "url": "data/evidence.csv"
   },
   {
