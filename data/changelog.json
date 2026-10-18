@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-18",
+    "title": "Weekly update",
+    "items": [
+      "Re-crawled all 21 platforms with the bot user agent and re-checked all 78 cited source links; none were dead. No score changes this week.",
+      "Allbirds: home page now returns HTTP 429 (rate limited) to our bot user agent and a GPTBot user agent, while a browser user agent gets the full page. Bot access held at 19 pending a retest from a second network.",
+      "Best Buy and United still time out; Hyatt (403) and Resy (HTML shell) still have no valid robots.txt.",
+      "robots.txt changes: The Home Depot dropped one Allow rule for search URLs; Etsy and OpenTable changed comments or generation dates only.",
+      "All scores remain preliminary."
+    ]
+  },
+  {
     "date": "2026-10-13",
     "title": "First full update (browser-free run)",
     "items": [
