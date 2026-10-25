@@ -4,7 +4,7 @@
     "name": "Amazon",
     "category": "Marketplace",
     "url": "https://www.amazon.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 2,
@@ -18,7 +18,7 @@
     "total": 45,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 202 (0 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 3",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 202 (0 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 3",
         "url": "data/evidence.csv"
       },
       {
@@ -53,7 +53,7 @@
     "name": "Walmart",
     "category": "Retail",
     "url": "https://www.walmart.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 18,
@@ -67,7 +67,7 @@
     "total": 73,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 200 (450113 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 200 (1091010 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -106,7 +106,7 @@
     "name": "Target",
     "category": "Retail",
     "url": "https://www.target.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 18,
@@ -120,7 +120,7 @@
     "total": 66,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 200 (452003 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 200 (414017 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -159,7 +159,7 @@
     "name": "Best Buy",
     "category": "Retail",
     "url": "https://www.bestbuy.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 8,
@@ -173,7 +173,7 @@
     "total": 50,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 000 (0 bytes), robots HTTP 000 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 000 (0 bytes), robots HTTP 000 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -197,14 +197,14 @@
         "url": "https://www.bestbuy.com"
       }
     ],
-    "notes": "Home reachable. robots.txt names AI agents (GPTBot, ClaudeBot, ChatGPT-User, etc.) but only allows /site/ and /discover-learn/ and blocks cart, fulfillment, pricing, so access is partial. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Home and robots.txt timed out from two networks in this run (earlier crawl today reached them); bot access lowered pending retest. Oct 18 crawl: home and robots.txt timed out again with bot and browser UAs; bot access stays lowered."
+    "notes": "Home reachable. robots.txt names AI agents (GPTBot, ClaudeBot, ChatGPT-User, etc.) but only allows /site/ and /discover-learn/ and blocks cart, fulfillment, pricing, so access is partial. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Home and robots.txt timed out from two networks in this run (earlier crawl today reached them); bot access lowered pending retest. Oct 18 crawl: home and robots.txt timed out again with bot and browser UAs; bot access stays lowered. Oct 25 crawl: home and robots.txt timed out again; bot access stays lowered."
   },
   {
     "id": "etsy",
     "name": "Etsy",
     "category": "Marketplace",
     "url": "https://www.etsy.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 6,
@@ -218,7 +218,7 @@
     "total": 56,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 403 (776 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 403 (776 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -261,7 +261,7 @@
     "name": "eBay",
     "category": "Marketplace",
     "url": "https://www.ebay.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 3,
@@ -275,7 +275,7 @@
     "total": 46,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 403 (1832 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 2",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 403 (1739 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 2",
         "url": "data/evidence.csv"
       },
       {
@@ -314,7 +314,7 @@
     "name": "Allbirds",
     "category": "Retail (Shopify)",
     "url": "https://www.allbirds.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 19,
@@ -328,8 +328,12 @@
     "total": 86,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 429 (18 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 200 (695142 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
+      },
+      {
+        "label": "Retest 2026-10-18: home 429 for crawler UAs vs 200 for browser/curl from the same IP; robots.txt, sitemap.xml, products.json 200 for GPTBot",
+        "url": "data/raw/allbirds_retest_20261018.txt"
       },
       {
         "label": "robots.txt (saved copy)",
@@ -352,14 +356,14 @@
         "url": "https://www.allbirds.com/pages/contact-us"
       }
     ],
-    "notes": "Shopify storefront: home and robots reachable; robots.txt restricts some crawler paths. Shopify merchants get Shopify UCP agentic checkout by platform default (https://shopify.dev/docs/apps/build/storefront-mcp); score assumes the platform defaults are enabled. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Oct 18 crawl: home page returned HTTP 429 (\"local_rate_limited\") to the AgentReady bot UA and to a GPTBot UA, including a retry after the 60-second Retry-After window, while a browser UA got the full page; robots.txt unchanged. Bot access held pending a retest from a second network."
+    "notes": "Shopify storefront: home and robots reachable; robots.txt restricts some crawler paths. Shopify merchants get Shopify UCP agentic checkout by platform default (https://shopify.dev/docs/apps/build/storefront-mcp); score assumes the platform defaults are enabled. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Oct 18 crawl: home page returned HTTP 429 (\"local_rate_limited\") to the AgentReady bot UA and to a GPTBot UA, including a retry after the 60-second Retry-After window, while a browser UA got the full page; robots.txt unchanged. Bot access held pending a retest from a second network. Oct 18 retest: the 429 is user-agent based, not IP rate limiting. From the same IP within seconds, crawler UAs (AgentReadyBot, GPTBot, ClaudeBot, ChatGPT-User, OAI-SearchBot, Googlebot, bingbot) got 429 \"local_rate_limited\" (Cloudflare edge, Retry-After 60, persisted past it) while browser, curl, a non-\"bot\" AgentReady UA and PerplexityBot got 200. GPTBot still gets 200 on robots.txt, sitemap.xml and products.json; robots.txt has no AI-crawler blocks. Other Shopify stores show the same pattern, so this looks like platform-level unverified-crawler filtering. A bot-UA retest from a second network is still pending, so bot access stays 19 under the method. Oct 25 crawl: home page returned HTTP 200 to the AgentReady bot UA and a GPTBot UA (the Oct 18 429 did not recur for crawler UAs; a browser UA got one 429 in a spot check, so the edge filtering looks intermittent). Bot access stays 19."
   },
   {
     "id": "southwest",
     "name": "Southwest Airlines",
     "category": "Airline",
     "url": "https://www.southwest.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 10,
@@ -373,7 +377,7 @@
     "total": 50,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 200 (7550 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 200 (7132 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -408,7 +412,7 @@
     "name": "United Airlines",
     "category": "Airline",
     "url": "https://www.united.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 4,
@@ -422,7 +426,7 @@
     "total": 39,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 000 (0 bytes), robots HTTP 000 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 000 (0 bytes), robots HTTP 000 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -438,14 +442,14 @@
         "url": "https://www.united.com"
       }
     ],
-    "notes": "Request timed out (HTTP 000); robots.txt was not retrieved. The saved robots_united.txt is byte-identical to Southwest's and was NOT used as evidence. Bot access is scored low pending a re-run. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Retried with bot and browser UAs plus a second network: still timeout / HTTP 500. Oct 18 crawl: still timing out with bot and browser UAs."
+    "notes": "Request timed out (HTTP 000); robots.txt was not retrieved. The saved robots_united.txt is byte-identical to Southwest's and was NOT used as evidence. Bot access is scored low pending a re-run. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Retried with bot and browser UAs plus a second network: still timeout / HTTP 500. Oct 18 crawl: still timing out with bot and browser UAs. Oct 25 crawl: still timing out."
   },
   {
     "id": "expedia",
     "name": "Expedia",
     "category": "Travel",
     "url": "https://www.expedia.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 8,
@@ -459,7 +463,7 @@
     "total": 59,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 429 (25103 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 429 (25095 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -502,7 +506,7 @@
     "name": "Airbnb",
     "category": "Travel",
     "url": "https://www.airbnb.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 8,
@@ -516,7 +520,7 @@
     "total": 37,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 200 (684966 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 2",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 200 (695119 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 2",
         "url": "data/evidence.csv"
       },
       {
@@ -547,7 +551,7 @@
     "name": "Hyatt",
     "category": "Hotel",
     "url": "https://www.hyatt.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 3,
@@ -561,7 +565,7 @@
     "total": 43,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 403 (12858 bytes), robots HTTP 403 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 403 (12858 bytes), robots HTTP 403 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -588,7 +592,7 @@
     "name": "OpenTable",
     "category": "Reservations",
     "url": "https://www.opentable.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 17,
@@ -602,7 +606,7 @@
     "total": 66,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 200 (542672 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 403 (371 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -622,14 +626,14 @@
         "url": "https://www.opentable.com"
       }
     ],
-    "notes": "Home reachable, large robots.txt with per-bot groups (including AI search bots) that block admin/internal paths and also booking paths. Online booking is the core product; agent-booking partnerships credited conservatively. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run."
+    "notes": "Home reachable, large robots.txt with per-bot groups (including AI search bots) that block admin/internal paths and also booking paths. Online booking is the core product; agent-booking partnerships credited conservatively. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Oct 25 crawl: home page returned HTTP 403 to the AgentReady bot UA and timed out with a browser UA from the same network; robots.txt still 200 and unchanged. Bot access held at 17 pending a retest from a second network."
   },
   {
     "id": "resy",
     "name": "Resy",
     "category": "Reservations",
     "url": "https://resy.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 12,
@@ -643,7 +647,7 @@
     "total": 46,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 200 (5256 bytes), robots HTTP 200 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 200 (5255 bytes), robots HTTP 200 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -670,7 +674,7 @@
     "name": "DoorDash",
     "category": "Delivery",
     "url": "https://www.doordash.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 5,
@@ -684,7 +688,7 @@
     "total": 50,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 403 (5587 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 403 (5587 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -723,7 +727,7 @@
     "name": "Great Clips",
     "category": "Local services",
     "url": "https://www.greatclips.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 18,
@@ -737,7 +741,7 @@
     "total": 51,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 200 (97494 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 200 (97470 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -768,7 +772,7 @@
     "name": "Aspen Dental",
     "category": "Local services",
     "url": "https://www.aspendental.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 18,
@@ -782,7 +786,7 @@
     "total": 51,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 200 (3718550 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 200 (2695226 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -805,7 +809,7 @@
     "name": "Instacart",
     "category": "Delivery",
     "url": "https://www.instacart.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 15,
@@ -819,7 +823,7 @@
     "total": 76,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 200 (601354 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 200 (718393 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -862,7 +866,7 @@
     "name": "The Home Depot",
     "category": "Retail",
     "url": "https://www.homedepot.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 5,
@@ -876,7 +880,7 @@
     "total": 48,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 403 (371 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 403 (371 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -907,7 +911,7 @@
     "name": "Booking.com",
     "category": "Travel",
     "url": "https://www.booking.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 6,
@@ -921,7 +925,7 @@
     "total": 53,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 202 (3962 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 202 (3962 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {
@@ -956,7 +960,7 @@
     "name": "Chipotle",
     "category": "Restaurant ordering",
     "url": "https://www.chipotle.com",
-    "date": "2026-10-18",
+    "date": "2026-10-25",
     "status": "preliminary",
     "subscores": {
       "bot_access": 18,
@@ -970,7 +974,7 @@
     "total": 49,
     "evidence": [
       {
-        "label": "Crawl 2026-10-18 (weekly update): home HTTP 200 (69329 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+        "label": "Crawl 2026-10-25 (weekly update): home HTTP 200 (70792 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
         "url": "data/evidence.csv"
       },
       {

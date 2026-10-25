@@ -1,10 +1,22 @@
 [
   {
+    "date": "2026-10-25",
+    "title": "Weekly update",
+    "items": [
+      "Re-crawled all 21 platforms with the bot user agent and re-checked all 78 cited source links; none were dead. No score changes this week; rankings unchanged.",
+      "Allbirds: the home page returned HTTP 200 to our bot user agent and a GPTBot user agent again, so the Oct 18 crawler 429 did not recur. Bot access stays 19 (total 86).",
+      "OpenTable: the home page returned HTTP 403 to our bot user agent (robots.txt still open and unchanged). Bot access held at 17 pending a retest from a second network.",
+      "Best Buy and United still time out; Hyatt (403) and Resy (HTML shell) still have no valid robots.txt. No robots.txt rule changes at any tracked site.",
+      "All scores remain preliminary."
+    ]
+  },
+  {
     "date": "2026-10-18",
     "title": "Weekly update",
     "items": [
       "Re-crawled all 21 platforms with the bot user agent and re-checked all 78 cited source links; none were dead. No score changes this week.",
       "Allbirds: home page now returns HTTP 429 (rate limited) to our bot user agent and a GPTBot user agent, while a browser user agent gets the full page. Bot access held at 19 pending a retest from a second network.",
+      "Allbirds retest: the 429 is triggered by crawler user agents (same IP gets 200 with browser or curl UAs), and robots.txt, sitemap and product JSON stay open to GPTBot. A bot-UA retest from a second network is still pending, so bot access stays at 19 (total 86).",
       "Best Buy and United still time out; Hyatt (403) and Resy (HTML shell) still have no valid robots.txt.",
       "robots.txt changes: The Home Depot dropped one Allow rule for search URLs; Etsy and OpenTable changed comments or generation dates only.",
       "All scores remain preliminary."
