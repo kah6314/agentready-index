@@ -7,16 +7,7 @@
 <main>
 <h1>Change log</h1><div id="log" class="log">Loading...</div>
 </main>
-<footer><p><b>Last updated Oct 18, 2026.</b> Preliminary scores. Open data: <a href="/agentready-index/data/sites.json">sites.json</a> · <a href="/agentready-index/llms.txt">llms.txt</a> · <a href="/agentready-index/about.html">About</a></p></footer><!--gen--><script>
+<footer><p><b>Last updated Oct 25, 2026.</b> Preliminary scores. Open data: <a href="/agentready-index/data/sites.json">sites.json</a> · <a href="/agentready-index/llms.txt">llms.txt</a> · <a href="/agentready-index/about.html">About</a></p></footer><!--gen--><script>
 fetch("/agentready-index/data/changelog.json").then(r=>r.json()).then(l=>{const el=document.getElementById("log");el.textContent="";l.forEach(e=>{const d=document.createElement("section"),h=document.createElement("h2"),u=document.createElement("ul");h.textContent=e.date+" - "+e.title;e.items.forEach(i=>{const li=document.createElement("li");li.textContent=i;u.append(li)});d.append(h,u);el.append(d)})}).catch(()=>{document.getElementById("log").textContent="Could not load changelog."});
 </script>
-
-
-
-
-
-
-
-
-
 </body></html>
