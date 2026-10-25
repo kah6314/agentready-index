@@ -1,0 +1,6 @@
+Allbirds (Shopify, Cloudflare edge) tests from one box IP, 2026-10-18 ~07:35 PT:
+- Home "/": 429 body "local_rate_limited", retry-after: 60, server: cloudflare, no powered-by: Shopify header, for UAs: AgentReadyBot (compatible;...bot), GPTBot, ClaudeBot, Googlebot, bingbot, ChatGPT-User, OAI-SearchBot. Persisted after waiting 65s.
+- Same IP within seconds: 200 (718 KB, powered-by: Shopify) for curl/8.5.0, Chrome UA, "AgentReady/0.1" (no 'bot'), and PerplexityBot UA.
+- GPTBot UA gets 200 on /robots.txt, /sitemap.xml, /products.json.
+- Other Shopify stores with GPTBot UA: brooklinen.com 429, shop.mattel.com 429, gymshark.com 200.
+- Off-box WebFetch (different network, unknown UA): home 200, robots.txt 200 unchanged; robots has no GPTBot/ClaudeBot rules, only Nutch fully disallowed.
