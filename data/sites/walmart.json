@@ -3,7 +3,7 @@
  "name": "Walmart",
  "category": "Retail",
  "url": "https://www.walmart.com",
- "date": "2026-10-18",
+ "date": "2026-10-25",
  "status": "preliminary",
  "subscores": {
   "bot_access": 18,
@@ -17,7 +17,7 @@
  "total": 73,
  "evidence": [
   {
-   "label": "Crawl 2026-10-18 (weekly update): home HTTP 200 (450113 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "label": "Crawl 2026-10-25 (weekly update): home HTTP 200 (1091010 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
    "url": "data/evidence.csv"
   },
   {

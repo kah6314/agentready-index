@@ -3,7 +3,7 @@
  "name": "OpenTable",
  "category": "Reservations",
  "url": "https://www.opentable.com",
- "date": "2026-10-18",
+ "date": "2026-10-25",
  "status": "preliminary",
  "subscores": {
   "bot_access": 17,
@@ -17,7 +17,7 @@
  "total": 66,
  "evidence": [
   {
-   "label": "Crawl 2026-10-18 (weekly update): home HTTP 200 (542672 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "label": "Crawl 2026-10-25 (weekly update): home HTTP 403 (371 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
    "url": "data/evidence.csv"
   },
   {
@@ -37,6 +37,6 @@
    "url": "https://www.opentable.com"
   }
  ],
- "notes": "Home reachable, large robots.txt with per-bot groups (including AI search bots) that block admin/internal paths and also booking paths. Online booking is the core product; agent-booking partnerships credited conservatively. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.",
+ "notes": "Home reachable, large robots.txt with per-bot groups (including AI search bots) that block admin/internal paths and also booking paths. Online booking is the core product; agent-booking partnerships credited conservatively. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Oct 25 crawl: home page returned HTTP 403 to the AgentReady bot UA and timed out with a browser UA from the same network; robots.txt still 200 and unchanged. Bot access held at 17 pending a retest from a second network.",
  "rank": 5
 }

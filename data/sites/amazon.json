@@ -3,7 +3,7 @@
  "name": "Amazon",
  "category": "Marketplace",
  "url": "https://www.amazon.com",
- "date": "2026-10-18",
+ "date": "2026-10-25",
  "status": "preliminary",
  "subscores": {
   "bot_access": 2,
@@ -17,7 +17,7 @@
  "total": 45,
  "evidence": [
   {
-   "label": "Crawl 2026-10-18 (weekly update): home HTTP 202 (0 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 3",
+   "label": "Crawl 2026-10-25 (weekly update): home HTTP 202 (0 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 3",
    "url": "data/evidence.csv"
   },
   {

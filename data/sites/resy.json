@@ -3,7 +3,7 @@
  "name": "Resy",
  "category": "Reservations",
  "url": "https://resy.com",
- "date": "2026-10-18",
+ "date": "2026-10-25",
  "status": "preliminary",
  "subscores": {
   "bot_access": 12,
@@ -17,7 +17,7 @@
  "total": 46,
  "evidence": [
   {
-   "label": "Crawl 2026-10-18 (weekly update): home HTTP 200 (5256 bytes), robots HTTP 200 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
+   "label": "Crawl 2026-10-25 (weekly update): home HTTP 200 (5255 bytes), robots HTTP 200 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
    "url": "data/evidence.csv"
   },
   {
