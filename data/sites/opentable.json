@@ -3,7 +3,7 @@
  "name": "OpenTable",
  "category": "Reservations",
  "url": "https://www.opentable.com",
- "date": "2026-10-25",
+ "date": "2026-11-01",
  "status": "preliminary",
  "subscores": {
   "bot_access": 17,
@@ -17,8 +17,12 @@
  "total": 66,
  "evidence": [
   {
-   "label": "Crawl 2026-10-25 (weekly update): home HTTP 403 (371 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "label": "Crawl 2026-11-01 (weekly update): home HTTP 200 (546494 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
    "url": "data/evidence.csv"
+  },
+  {
+   "label": "Retest 2026-11-01: home 200 for bot, GPTBot and browser UAs from the box (bot UA 403 of Oct 25 cleared)",
+   "url": "data/raw/retest_20261101.txt"
   },
   {
    "label": "robots.txt (saved copy)",
@@ -37,6 +41,6 @@
    "url": "https://www.opentable.com"
   }
  ],
- "notes": "Home reachable, large robots.txt with per-bot groups (including AI search bots) that block admin/internal paths and also booking paths. Online booking is the core product; agent-booking partnerships credited conservatively. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Oct 25 crawl: home page returned HTTP 403 to the AgentReady bot UA and timed out with a browser UA from the same network; robots.txt still 200 and unchanged. Bot access held at 17 pending a retest from a second network.",
+ "notes": "Home reachable, large robots.txt with per-bot groups (including AI search bots) that block admin/internal paths and also booking paths. Online booking is the core product; agent-booking partnerships credited conservatively. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Oct 25 crawl: home page returned HTTP 403 to the AgentReady bot UA and timed out with a browser UA from the same network; robots.txt still 200 and unchanged. Bot access held at 17 pending a retest from a second network. Nov 1 crawl: home page back to HTTP 200 for the AgentReady bot UA (confirmed on 3 more tries), a GPTBot UA and a browser UA, so the Oct 25 403 did not recur; robots.txt unchanged apart from comments. Bot access stays 17; the pending retest is resolved.",
  "rank": 5
 }

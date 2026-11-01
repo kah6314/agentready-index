@@ -3,7 +3,7 @@
  "name": "Allbirds",
  "category": "Retail (Shopify)",
  "url": "https://www.allbirds.com",
- "date": "2026-10-25",
+ "date": "2026-11-01",
  "status": "preliminary",
  "subscores": {
   "bot_access": 19,
@@ -17,7 +17,7 @@
  "total": 86,
  "evidence": [
   {
-   "label": "Crawl 2026-10-25 (weekly update): home HTTP 200 (695142 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "label": "Crawl 2026-11-01 (weekly update): home HTTP 200 (690026 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
    "url": "data/evidence.csv"
   },
   {
@@ -45,6 +45,6 @@
    "url": "https://www.allbirds.com/pages/contact-us"
   }
  ],
- "notes": "Shopify storefront: home and robots reachable; robots.txt restricts some crawler paths. Shopify merchants get Shopify UCP agentic checkout by platform default (https://shopify.dev/docs/apps/build/storefront-mcp); score assumes the platform defaults are enabled. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Oct 18 crawl: home page returned HTTP 429 (\"local_rate_limited\") to the AgentReady bot UA and to a GPTBot UA, including a retry after the 60-second Retry-After window, while a browser UA got the full page; robots.txt unchanged. Bot access held pending a retest from a second network. Oct 18 retest: the 429 is user-agent based, not IP rate limiting. From the same IP within seconds, crawler UAs (AgentReadyBot, GPTBot, ClaudeBot, ChatGPT-User, OAI-SearchBot, Googlebot, bingbot) got 429 \"local_rate_limited\" (Cloudflare edge, Retry-After 60, persisted past it) while browser, curl, a non-\"bot\" AgentReady UA and PerplexityBot got 200. GPTBot still gets 200 on robots.txt, sitemap.xml and products.json; robots.txt has no AI-crawler blocks. Other Shopify stores show the same pattern, so this looks like platform-level unverified-crawler filtering. A bot-UA retest from a second network is still pending, so bot access stays 19 under the method. Oct 25 crawl: home page returned HTTP 200 to the AgentReady bot UA and a GPTBot UA (the Oct 18 429 did not recur for crawler UAs; a browser UA got one 429 in a spot check, so the edge filtering looks intermittent). Bot access stays 19.",
+ "notes": "Shopify storefront: home and robots reachable; robots.txt restricts some crawler paths. Shopify merchants get Shopify UCP agentic checkout by platform default (https://shopify.dev/docs/apps/build/storefront-mcp); score assumes the platform defaults are enabled. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Oct 18 crawl: home page returned HTTP 429 (\"local_rate_limited\") to the AgentReady bot UA and to a GPTBot UA, including a retry after the 60-second Retry-After window, while a browser UA got the full page; robots.txt unchanged. Bot access held pending a retest from a second network. Oct 18 retest: the 429 is user-agent based, not IP rate limiting. From the same IP within seconds, crawler UAs (AgentReadyBot, GPTBot, ClaudeBot, ChatGPT-User, OAI-SearchBot, Googlebot, bingbot) got 429 \"local_rate_limited\" (Cloudflare edge, Retry-After 60, persisted past it) while browser, curl, a non-\"bot\" AgentReady UA and PerplexityBot got 200. GPTBot still gets 200 on robots.txt, sitemap.xml and products.json; robots.txt has no AI-crawler blocks. Other Shopify stores show the same pattern, so this looks like platform-level unverified-crawler filtering. A bot-UA retest from a second network is still pending, so bot access stays 19 under the method. Oct 25 crawl: home page returned HTTP 200 to the AgentReady bot UA and a GPTBot UA (the Oct 18 429 did not recur for crawler UAs; a browser UA got one 429 in a spot check, so the edge filtering looks intermittent). Bot access stays 19. Nov 1 crawl: home page HTTP 200 to the AgentReady bot UA (3 extra checks), a GPTBot UA and a browser UA; no 429 this week. robots.txt was rewritten to the newer Shopify layout (explicit Allow rules for product/collection/page/blog paths, checkout/cart/account/order paths still blocked, the Nutch/AhrefsBot/MJ12bot/Pinterest groups removed); still no AI-crawler blocks. Bot access stays 19.",
  "rank": 1
 }

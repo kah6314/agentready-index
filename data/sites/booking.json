@@ -3,7 +3,7 @@
  "name": "Booking.com",
  "category": "Travel",
  "url": "https://www.booking.com",
- "date": "2026-10-25",
+ "date": "2026-11-01",
  "status": "preliminary",
  "subscores": {
   "bot_access": 6,
@@ -17,7 +17,7 @@
  "total": 53,
  "evidence": [
   {
-   "label": "Crawl 2026-10-25 (weekly update): home HTTP 202 (3962 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "label": "Crawl 2026-11-01 (weekly update): home HTTP 202 (3962 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
    "url": "data/evidence.csv"
   },
   {
@@ -45,6 +45,6 @@
    "url": "https://openai.com/index/introducing-apps-in-chatgpt/"
   }
  ],
- "notes": "Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.",
+ "notes": "Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Nov 1 crawl: robots.txt added \"Disallow: /*?*no_scraping_cache_key=\" in three groups (a narrow URL-parameter rule); no AI-crawler changes. Scores unchanged.",
  "rank": 8
 }
