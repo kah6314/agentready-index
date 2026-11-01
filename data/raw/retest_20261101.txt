@@ -1,0 +1,19 @@
+# 2026-11-01 retest from the box (same network as crawl; no second network available). Browser UA = Chrome/129 Mac.
+bestbuy browser: 000 0 robots: 000
+united browser: 000 0 robots: 000
+etsy browser: 403 779 robots: 200
+ebay browser: 403 1740 robots: 200
+expedia browser: 429 25175 robots: 200
+hyatt browser: 403 12858 robots: 403
+doordash browser: 403 5609 robots: 200
+homedepot browser: 403 371 robots: 200
+allbirds browser: 200 690026 robots: 200
+opentable browser: 200 547777 robots: 200
+allbirds GPTBot: 200 690026
+opentable GPTBot: 200 546507
+opentable bot #1: 200 546755
+allbirds bot #1: 200
+opentable bot #2: 200 546755
+allbirds bot #2: 200
+opentable bot #3: 200 546494
+allbirds bot #3: 200
