@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-11-01",
+    "title": "Weekly update",
+    "items": [
+      "Re-crawled all 21 platforms with the bot user agent and re-checked all 78 cited source links; none were dead. No score changes this week; rankings unchanged.",
+      "OpenTable: the home page is back to HTTP 200 for our bot user agent (and for GPTBot and browser user agents), so the Oct 25 403 did not recur. Bot access stays 17 (total 66).",
+      "Allbirds: home page HTTP 200 for our bot user agent again. Its robots.txt was rewritten to Shopify's newer layout (explicit Allow rules for shopping pages; checkout, cart and account paths still blocked; several per-crawler groups removed) with still no AI-crawler blocks. Bot access stays 19 (total 86).",
+      "Booking.com added a narrow robots.txt rule for a scraping URL parameter; no AI-crawler changes. Best Buy and United still time out; Hyatt (403) and Resy (HTML shell) still have no valid robots.txt.",
+      "All scores remain preliminary."
+    ]
+  },
+  {
     "date": "2026-10-25",
     "title": "Weekly update",
     "items": [
