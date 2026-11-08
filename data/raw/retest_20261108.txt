@@ -1,0 +1,2 @@
+# 2026-11-08 retest from the box (same network as crawl; no second network available).
+aspendental robots.txt: HTTP 200 text/html (Next.js page, ~445 KB) for browser, GPTBot and AgentReadyBot UAs; no robots.txt rules served. Previous (Nov 1) file was "User-agent: * / Allow: /" plus sitemaps.
