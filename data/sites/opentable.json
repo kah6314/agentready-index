@@ -3,7 +3,7 @@
  "name": "OpenTable",
  "category": "Reservations",
  "url": "https://www.opentable.com",
- "date": "2026-11-01",
+ "date": "2026-11-08",
  "status": "preliminary",
  "subscores": {
   "bot_access": 17,
@@ -17,7 +17,7 @@
  "total": 66,
  "evidence": [
   {
-   "label": "Crawl 2026-11-01 (weekly update): home HTTP 200 (546494 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "label": "Crawl 2026-11-08 (weekly update): home HTTP 200 (544366 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
    "url": "data/evidence.csv"
   },
   {

@@ -3,7 +3,7 @@
  "name": "Allbirds",
  "category": "Retail (Shopify)",
  "url": "https://www.allbirds.com",
- "date": "2026-11-01",
+ "date": "2026-11-08",
  "status": "preliminary",
  "subscores": {
   "bot_access": 19,
@@ -17,7 +17,7 @@
  "total": 86,
  "evidence": [
   {
-   "label": "Crawl 2026-11-01 (weekly update): home HTTP 200 (690026 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "label": "Crawl 2026-11-08 (weekly update): home HTTP 200 (703113 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
    "url": "data/evidence.csv"
   },
   {

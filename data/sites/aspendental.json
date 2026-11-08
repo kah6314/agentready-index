@@ -3,7 +3,7 @@
  "name": "Aspen Dental",
  "category": "Local services",
  "url": "https://www.aspendental.com",
- "date": "2026-11-01",
+ "date": "2026-11-08",
  "status": "preliminary",
  "subscores": {
   "bot_access": 18,
@@ -17,8 +17,12 @@
  "total": 51,
  "evidence": [
   {
-   "label": "Crawl 2026-11-01 (weekly update): home HTTP 200 (1959153 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "label": "Crawl 2026-11-08 (weekly update): home HTTP 200 (1991334 bytes), robots HTTP 200 (not a valid robots.txt), GPTBot/ClaudeBot full disallows 0",
    "url": "data/evidence.csv"
+  },
+  {
+   "label": "Retest 2026-11-08: robots.txt serves an HTML page (text/html) to bot, GPTBot and browser UAs",
+   "url": "data/raw/retest_20261108.txt"
   },
   {
    "label": "robots.txt (saved copy)",
@@ -33,6 +37,6 @@
    "url": "https://www.aspendental.com/about/contact-us/"
   }
  ],
- "notes": "Fully open robots.txt (Allow: /). Online appointment scheduling is available; no API or agent path known. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.",
+ "notes": "Fully open robots.txt (Allow: /). Online appointment scheduling is available; no API or agent path known. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Nov 8 crawl: /robots.txt now returns HTTP 200 with an HTML web page (text/html, Next.js) instead of a robots file, for bot, GPTBot and browser UAs; with no robots rules served nothing is blocked, matching the previous Allow-all file. Bot access unchanged; the Nov 1 robots file stays as the last valid copy.",
  "rank": 10
 }

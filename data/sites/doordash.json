@@ -3,7 +3,7 @@
  "name": "DoorDash",
  "category": "Delivery",
  "url": "https://www.doordash.com",
- "date": "2026-11-01",
+ "date": "2026-11-08",
  "status": "preliminary",
  "subscores": {
   "bot_access": 5,
@@ -17,7 +17,7 @@
  "total": 50,
  "evidence": [
   {
-   "label": "Crawl 2026-11-01 (weekly update): home HTTP 403 (5587 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "label": "Crawl 2026-11-08 (weekly update): home HTTP 403 (5587 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
    "url": "data/evidence.csv"
   },
   {
@@ -49,6 +49,6 @@
    "url": "https://about.doordash.com/en-us/news"
   }
  ],
- "notes": "Bot UA received HTTP 403 on home; robots.txt reachable and does not name AI crawlers but disallows /consumer/ and /orders/. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run.",
+ "notes": "Bot UA received HTTP 403 on home; robots.txt reachable and does not name AI crawlers but disallows /consumer/ and /orders/. Oct 13 update: contact/booking channels re-scored from official help pages (see evidence); browser checkout tests not yet run. Nov 8 crawl: robots.txt added three sitemap lines (reservation store/city, brand landing pages); no rule changes. Scores unchanged.",
  "rank": 13
 }

@@ -3,7 +3,7 @@
  "name": "Expedia",
  "category": "Travel",
  "url": "https://www.expedia.com",
- "date": "2026-11-01",
+ "date": "2026-11-08",
  "status": "preliminary",
  "subscores": {
   "bot_access": 8,
@@ -17,7 +17,7 @@
  "total": 59,
  "evidence": [
   {
-   "label": "Crawl 2026-11-01 (weekly update): home HTTP 429 (25112 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "label": "Crawl 2026-11-08 (weekly update): home HTTP 429 (25132 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
    "url": "data/evidence.csv"
   },
   {

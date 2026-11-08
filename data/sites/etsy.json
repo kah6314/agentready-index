@@ -3,7 +3,7 @@
  "name": "Etsy",
  "category": "Marketplace",
  "url": "https://www.etsy.com",
- "date": "2026-11-01",
+ "date": "2026-11-08",
  "status": "preliminary",
  "subscores": {
   "bot_access": 6,
@@ -17,7 +17,7 @@
  "total": 56,
  "evidence": [
   {
-   "label": "Crawl 2026-11-01 (weekly update): home HTTP 403 (776 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
+   "label": "Crawl 2026-11-08 (weekly update): home HTTP 403 (776 bytes), robots HTTP 200, GPTBot/ClaudeBot full disallows 0",
    "url": "data/evidence.csv"
   },
   {
