@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-11-08",
+    "title": "Weekly update",
+    "items": [
+      "Re-crawled all 21 platforms with the bot user agent and re-checked all 78 cited source links; none were dead. No score changes this week; rankings unchanged (Allbirds 86, Instacart 76, Walmart 73 at the top).",
+      "Aspen Dental: /robots.txt now returns an HTML web page (text/html) instead of a robots file, for our bot, GPTBot and browser user agents. With no rules served nothing is blocked, the same as the previous allow-all file, so bot access is unchanged; we keep the Nov 1 file as the last valid copy.",
+      "DoorDash: robots.txt added three sitemap lines; no rule changes. Etsy and OpenTable: comment or timestamp changes only.",
+      "Best Buy and United still time out from our crawler; their bot access scores stay lowered. Retests ran from one network only."
+    ]
+  },
+  {
     "date": "2026-11-01",
     "title": "Weekly update",
     "items": [
